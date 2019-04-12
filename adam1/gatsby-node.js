@@ -14,7 +14,6 @@ exports.createPages = async ({ actions, graphql }) => {
                 slug: node.fields.slug,
             }, // additional data can be passed via context
         });
-        // console.log('page created');
     })
 }
 
