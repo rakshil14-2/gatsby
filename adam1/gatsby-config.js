@@ -7,17 +7,23 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-typescript`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
+    
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`, 
-    `gatsby-transformer-sharp`,
     // `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images1`,
+        path: `${__dirname}/src/images1`,
       },
     },
     {

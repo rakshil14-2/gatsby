@@ -3,10 +3,8 @@ import Layout from '../components/layout';
 import { graphql } from 'gatsby'
 
 function BlogTemplate(props) {
-
     const post = props.data.markdownRemark;
     const { title,date } = post.frontmatter;
-
     return (
         <Layout>
             <div>
@@ -17,11 +15,9 @@ function BlogTemplate(props) {
     )
 }
 
-
 export default BlogTemplate;
 
 export const query = graphql`
-
 query PostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
         html

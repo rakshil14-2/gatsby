@@ -4,13 +4,14 @@ import { Img } from "gatsby-image";
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import Images from "../components/images";
+import ImagesLeft from "../components/imagesLeft";
+import ImagesRight from "../components/imagesRight";
 // import SEO from "../components/seo"
 
 const IndexPage = () => {
   return <Layout>
   <input type="text"></input>
-    <Images></Images>
+    <ImagesRight></ImagesRight>
   </Layout>
 }
 export default IndexPage;

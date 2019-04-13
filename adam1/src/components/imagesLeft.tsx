@@ -1,29 +1,31 @@
 import React from "react"
-import { StaticQuery, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-function Images() {
-    const gql = graphql`
-    query {
-        allFile(filter: {sourceInstanceName: {eq: "images"}}) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 2000) {
-                    ...GatsbyImageSharpFluid
-                }
+function ImagesLeft() {
+  const gql = graphql`
+  query {
+      allFile(filter: {sourceInstanceName: {eq: "images"}}) {
+        edges {
+          node {
+            childImageSharp {
+              fluid(maxWidth: 2000) {
+                  ...GatsbyImageSharpFluid
               }
             }
           }
         }
-      }`;
-    const data = useStaticQuery(gql);
-    const Temp = data.allFile.edges.map((x: any, index: number) => {
-        return <Img key={index} fluid={x.node.childImageSharp.fluid}></Img>
-    });
-    return Temp;
+      }
+    }`;
+  
+  const data = useStaticQuery(gql);
+
+  const Temp = data.allFile.edges.map((x: any, index: number) => {
+    return <Img key={index} fluid={x.node.childImageSharp.fluid}></Img>
+  });
+  return Temp;
 }
-export default Images;
+export default ImagesLeft;
 
 /*
 
