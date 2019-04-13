@@ -12,7 +12,7 @@ import AllImages from "../components/allImages";
 const IndexPage = () => {
   return <Layout>
   <input type="text"></input>
-    <AllImages></AllImages>
+    <AllImages source="images1"></AllImages>
   </Layout>
 }
 export default IndexPage;

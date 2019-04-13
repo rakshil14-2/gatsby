@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-function AllImages() {
-    const gql = graphql`{
+function AllImages({ source }) {
+  const gql = graphql`{
   qr1:
   allFile(filter: {sourceInstanceName: {eq: "images1"}}) {
     edges {
@@ -30,21 +30,16 @@ function AllImages() {
   }
  } `;
 
-    const data = useStaticQuery(gql);
+  const data = useStaticQuery(gql);
+  const sourceObject = {
+    images: data.qr1.edges,
+    images1: data.qr2.edges
+  }
 
-    const edges1 = data.qr1.edges;
-    const edges2 = data.qr2.edges;
+  const Temp = sourceObject[source].map((x: any, index: number) => {
+    return <Img key={index} fluid={x.node.childImageSharp.fluid}></Img>
+  });
 
-    // const Temp = data.allFile.edges.map((x: any, index: number) => {
-    //     return <Img key={index} fluid={x.node.childImageSharp.fluid}></Img>
-    // });
-
-    const Temp1 = edges1.map((x: any, index: number) => {
-        return <Img key={index} fluid={x.node.childImageSharp.fluid}></Img>
-    });
-
-    // const Temp2 = <div>Test</div>
-
-    return Temp1;
+  return Temp;
 }
 export default AllImages;
