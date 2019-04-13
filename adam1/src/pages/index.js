@@ -6,12 +6,13 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import ImagesLeft from "../components/imagesLeft";
 import ImagesRight from "../components/imagesRight";
+import AllImages from "../components/allImages";
 // import SEO from "../components/seo"
 
 const IndexPage = () => {
   return <Layout>
   <input type="text"></input>
-    <ImagesRight></ImagesRight>
+    <AllImages></AllImages>
   </Layout>
 }
 export default IndexPage;
