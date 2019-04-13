@@ -3,6 +3,7 @@
 ## Pages
 
 Home
+E-commerce
 About
 Service
 Association
@@ -18,3 +19,9 @@ Photography
     upcoming events
     contests
 Announcements
+
+Planning
+Areas
+Components
+Pages
+Image gallary
