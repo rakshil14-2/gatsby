@@ -1,6 +1,6 @@
 ---
-title: This is sample3
-description: Lorem ipsum dolor sit amet
+title: Sample 3
+description: This is Sample 3
 date: '2018-12-2'
 image: ''
 tags: ['javascript','react','gatsby']

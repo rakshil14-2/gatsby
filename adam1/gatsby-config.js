@@ -8,7 +8,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
-    
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/json-data`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name:`products`,
+        path: `${__dirname}/src/products`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-robots-txt`,
@@ -33,6 +46,7 @@ module.exports = {
         path: `${__dirname}/src/blogs`,
       },
     },
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

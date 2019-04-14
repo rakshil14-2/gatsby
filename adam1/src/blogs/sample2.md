@@ -1,6 +1,6 @@
 ---
-title: This is sample2
-description: This is generated Lorem Ipsum
+title: Sample 2
+description: This is sample 2
 date: '2018-12-2'
 image: ''
 tags: ['javascript','react','gatsby']
