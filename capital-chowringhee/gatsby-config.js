@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Capital Chowringhee`,
+    description: `Retail shop for sales and service of electronic items. We specialize in digital cameras, SLR and mtrrorless cameras, camera lens and assessories, cellular / mobile phones, mobile phone accessory, power bank, charger, watch, headphone, microphone, earphone, laptop and desktop computer and assessory, domestic items and many more`,
+    author: `Kush Infotech`,
   },
+  
   plugins: [
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-sass`,
+    `gatsby-transformer-remark`,    
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
