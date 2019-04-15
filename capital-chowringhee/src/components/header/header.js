@@ -1,24 +1,24 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { useMetaData } from '../../hooks/site-metadata';
+import { HeaderMain } from './header-main';
+import { HeaderRight } from './header-right';
 
-const Header = ({ siteTitle }) => (
-  <header className="header">
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}>
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => {
+  const { metaData } = useMetaData();
+  return <header className="header">
+    <h2 className="header-left">
+      <Link
+        to="/">
+        {metaData.title}
+      </Link>
+    </h2>
+    <HeaderMain></HeaderMain>
+    <HeaderRight></HeaderRight>
   </header>
-)
-
-
+}
 export default Header
+
 /*
  style={{
       background: `rebeccapurple`,

@@ -1,0 +1,90 @@
+[
+    {
+        "name":"Canon EOS 800D",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"canon-eos-800D",
+        "offerPrice":12799,
+        "mrp":13990
+    },
+    {
+        "name":"Nikon B500",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-B500",
+        "offerPrice":16799,
+        "mrp":19990
+    },
+    {
+        "name":"Nikon D3500",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-d3500",
+        "offerPrice":16800,
+        "mrp":19800
+    },
+    {
+        "name":"Nikon D5300",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-d5300",
+        "offerPrice":34550,
+        "mrp":67880
+    },
+    {
+        "name":"Nikon D5600",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-d5600",
+        "offerPrice":32445,
+        "mrp":55668
+    },
+    {
+        "name":"Nikon D7200",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-d7200",
+        "offerPrice":124445,
+        "mrp":134556
+    },
+    {
+        "name":"Nikon P500",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-p500",
+        "offerPrice":12300,
+        "mrp":19560
+    },
+    {
+        "name":"Nikon P900",
+        "specs":"",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"nikon-p900",
+        "offerPrice":12799,
+        "mrp":13990
+    }
+]
