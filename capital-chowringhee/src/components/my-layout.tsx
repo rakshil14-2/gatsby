@@ -1,8 +1,8 @@
 import React from "react"
-import { MyHeader } from "../header/my-header";
-import "./layout.scss";
+import MyHeader from "./my-header";
+import "./layout/layout.scss";
 
-const  MyLayout=()=> {
+const MyLayout = ({ children }) => {
     return <div className="container">
         <MyHeader></MyHeader>
     </div>
