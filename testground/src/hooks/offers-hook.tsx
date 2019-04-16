@@ -15,15 +15,34 @@ function useOffers() {
         }
       }
     }
+    qr2:
+    allFile(filter:{relativeDirectory: {eq:"products\\offers"}, extension:{ne:"json"}}) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fixed(width:280, height: 280) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
   }`;
 const offersData = useStaticQuery(gql);
-const offersAllImages = {};
+const offersAllImagesFluid = {},offersAllImagesFixed={} ;
 offersData.qr1.edges.forEach((x: any) => {
-    offersAllImages[x.node.name] = x.node.childImageSharp.fluid;
+    offersAllImagesFluid[x.node.name] = x.node.childImageSharp.fluid;
+    
+})
+
+offersData.qr2.edges.forEach((x: any) => {
+  offersAllImagesFixed[x.node.name] = x.node.childImageSharp.fixed;
 })
 
   return {
-    offersAllImages: offersAllImages
+    offersAllImagesFluid: offersAllImagesFluid,
+    offersAllImagesFixed:offersAllImagesFixed
   }
 }
 
