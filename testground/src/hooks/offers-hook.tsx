@@ -25,7 +25,6 @@ offersData.qr1.edges.forEach((x: any) => {
   return {
     offersAllImages: offersAllImages
   }
-
 }
 
 export { useOffers };
