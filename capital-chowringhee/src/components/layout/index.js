@@ -11,7 +11,8 @@ import "./layout.scss"
 const Layout = ({ children }) => {
   return <div className='container'>
     <Header></Header>
-    <Left></Left>
+    <Left className="left"></Left>
+    {/* <div className="left"></div> */}
     <main className='main'>{children}</main>
     <div className='right'></div>
     <Footer></Footer>

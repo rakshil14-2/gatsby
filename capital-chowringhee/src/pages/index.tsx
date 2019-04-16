@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-// import MyLayout from "../components/my-layout";
+import Main from '../components/main/main';
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -8,7 +7,7 @@ import Layout from "../components/layout"
 
 function IndexPage() {
   return <Layout>
-
+    <Main></Main>
   </Layout>
 }
 
