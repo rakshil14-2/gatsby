@@ -3,42 +3,39 @@
   background-color: burlywood;
   display: grid;
   grid-template-columns: 100%;
-  grid-auto-rows: 300px;
+  grid-auto-rows: 250px;
   grid-gap: 2px;
-
-  // .product {
-  //   display: grid;
-  //   grid-template-columns: 300px auto;
-  //   grid-template-rows: 250px;
-  //   grid-template-areas: "picture details";
-  // }
-
-  // .picture {
-  //   grid-area: picture;
-  // }
-
-  // .details {
-  //   grid-area: details;
-  // }
 }
 .product {
-  background-color: brown;
-  color: white;
+  background-color: white;
   display: grid;
   grid-gap:2px;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 250px auto;
   grid-template-rows: 100%;
   grid-template-areas: "picture details";
 }
 .picture{
   grid-area: picture;
-  background-color: aqua;
-  display:flex;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
+  // background-color: aqua;
+  width:85%;
+  height:85%;
+  margin:auto;
+  // padding: 40px;
+  // text-align: center;
+  // vertical-align: middle;
+  // width:80%;
+  // height:80%;
+  // justify-self: center;
+  // align-self: center;
+  // display:grid;
+  // align-content: center;
+  // display:flex;
+  // justify-items: center;
+  // justify-content: center;
+  // align-items: center;
 }
 .details{
   grid-area: details;
-  background-color: cornflowerblue;
+  margin:2rem;
+  
 }

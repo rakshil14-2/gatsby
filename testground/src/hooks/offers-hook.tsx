@@ -21,7 +21,7 @@ function useOffers() {
         node {
           name
           childImageSharp {
-            fixed(width:280, height: 280) {
+            fixed(width:436, height: 364) {
               ...GatsbyImageSharpFixed
             }
           }
