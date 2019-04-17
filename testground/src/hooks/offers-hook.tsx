@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 function useOffers() {
   const gql = graphql`{
     qr1:
-    allFile(filter:{relativeDirectory: {eq:"products\\offers"}, extension:{ne:"json"}}) {
+    allFile(filter:{sourceInstanceName: {eq:"offers"}, extension:{ne:"json"}}) {
       edges {
         node {
           name
@@ -16,7 +16,7 @@ function useOffers() {
       }
     }
     qr2:
-    allFile(filter:{relativeDirectory: {eq:"products\\offers"}, extension:{ne:"json"}}) {
+    allFile(filter:{sourceInstanceName: {eq:"offers"}, extension:{ne:"json"}}) {
       edges {
         node {
           name
