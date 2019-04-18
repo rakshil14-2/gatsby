@@ -1,13 +1,14 @@
 import { Link } from "gatsby"
 import React from "react"
+import styles from './header.module.scss';
 import { useMetaData } from '../../hooks/site-metadata';
 import { HeaderMain } from './header-main';
 import { HeaderRight } from './header-right';
 
 const Header = () => {
   const { metaData } = useMetaData();
-  return <header className="header">
-    <h2 className="header-left">
+  return <header className={styles.header}>
+    <h2 className={styles.headerLeft}>
       <Link
         to="/">
         {metaData.title}
@@ -20,22 +21,5 @@ const Header = () => {
 export default Header
 
 /*
- style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-
-style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
+ 
 */
