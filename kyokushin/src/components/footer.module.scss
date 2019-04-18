@@ -1,0 +1,17 @@
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    height:100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+
+    .footerContent{
+        align-self: center;
+        flex-grow: 1;
+    }
+}
