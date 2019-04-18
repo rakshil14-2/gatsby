@@ -1,18 +1,15 @@
 import React from "react"
-import { graphql, useStaticQuery } from 'gatsby';
-import { useOffers } from "../../hooks/offers-images";
-import offersJson from '../../images/products/offers/offers.json';
+import styles from './Left.module.scss';
+import { useShowcase } from '../../hooks/showcase-hook';
 import Img from "gatsby-image"
 
 function Left() {
-    const { offersAllImages } = useOffers();
+    const { allImagesFluid } = useShowcase();
 
-    const Temp = <div className="left">
-        {offersJson.map((x: any, index: number) => {
-            return <div className="left-item" key={index}>
-                <div>{x.name}</div>
-                <Img  fluid={offersAllImages[x.image]}></Img>
-            </div>
+    const Temp = <div className={styles.left}>
+        <h1>Showcase</h1>
+        {Object.keys(allImagesFluid).map((x: any, index: number) => {
+            return <div key={index} style={{ width: '200px', height: '200px' }}><Img fluid={allImagesFluid[x]} ></Img></div>;
         })}
     </div>
 

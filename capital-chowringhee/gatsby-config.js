@@ -11,18 +11,25 @@ module.exports = {
     `gatsby-transformer-remark`,   
     // `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `offers`,
         path: `${__dirname}/src/images/products/offers`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `showcase`,
+        path: `${__dirname}/src/images/products/showcase`,
       },
     },
     `gatsby-transformer-sharp`,
