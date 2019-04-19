@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useShowcase } from '../../hooks/showcase-hook';
 import Img from "gatsby-image"
 import showcaseJson from '../../images/products/showcase/showcase.json';
@@ -12,15 +12,15 @@ function Showcase() {
     const x = 0;
     // const racks = {};
 
-    function toRacks(itemsMeta: any[]) {
-        const rackObject = {};
+    function toRacksObject(itemsMeta: any[]) {
+        const racksObject = {};
         itemsMeta.forEach(x => {
             if (x.rack) {
-                rackObject[x.rack] || (rackObject[x.rack] = []);
-                rackObject[x.rack].push(x);
+                racksObject[x.rack] || (racksObject[x.rack] = []);
+                racksObject[x.rack].push(x);
             }
         })
-        return rackObject;
+        return racksObject;
     }
 
     function getFormattedCurrency(amount) {
@@ -57,7 +57,6 @@ function Showcase() {
 
         // });
         // return allProducts;
-        // <Img key={index} fluid= {itemsAllImagesFluid[x]}></Img>
         Object.keys(itemsAllImagesFluid).forEach((x: any, index: number) => {
             allItems.push(
                 <div key={index} style={{ width: '436px', height: '326px' }}><Img fluid={itemsAllImagesFluid[x]}></Img></div>
@@ -66,33 +65,41 @@ function Showcase() {
         return allItems;
     }
 
-    function getDisplayItem(item: any, index:number) {
+    function getDisplayItem(item: any, index: number) {
         const temp = <div key={index}>
-            <div>
+            <div style={{ width: '436px', height: '326px' }}>
                 <Img fluid={itemsAllImagesFluid[item.image]}></Img>
             </div>
-            <div>Details</div>
+            <div>{item.name}</div>
         </div>
         return temp;
     }
 
-    const racks:any = toRacks(showcaseJson);
+    const racksObject: any = toRacksObject(showcaseJson);
+    const racksObjectKeys: string[] = Object.keys(racksObject);
     const Temp = <div className={styles.showcase}>
-        {
-            Object.keys(racks).map(x=>{
-                return racks[x].map((y:any,index:number)=>{
-                    return getDisplayItem(y, index);
-                })
-                
-            })
+    
+        {racksObjectKeys.map((racksKey, index) => {
+            return <Fragment key={index}> <h1 >{racksKey }</h1>
+             <div  className={styles.rack}>
+                    {
+                        racksObject[racksKey].map((x: any, index: number) => {
+                            return getDisplayItem(x, index);
+                        })
+                    }
+                </div>
+            </Fragment>
+        })
         }
+
+
         {/* <h2>Rack1</h2>
         <div className={styles.rack}>
             {
                 getAllItems().map(x => x)
             }
-        </div>
-        <h2>Rack2</h2>
+        </div> */}
+        {/* <h2>Rack2</h2>
         <div className={styles.rack}>
             {
                 getAllItems().map(x => x)

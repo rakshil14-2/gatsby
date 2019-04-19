@@ -94,5 +94,29 @@
         "offerPrice":12300,
         "mrp":19560,
         "rack":"top2"
+    },
+    {
+        "name":"Sony Alpha A68K",
+        "specs":"24.2 MP",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"sony-ilca-68k",
+        "offerPrice":40000,
+        "mrp":58990,
+        "rack":"top1"
+    },
+    {
+        "name":"Sony Mirrorless Camera",
+        "specs":"20.1 MP",
+        "descr":"",
+        "year":"",
+        "month":"",
+        "launch":"",
+        "image":"sony-ilce-5000l",
+        "offerPrice":27000,
+        "mrp":33950,
+        "rack":"top2"
     }
 ]
