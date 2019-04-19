@@ -3,6 +3,7 @@ import React from "react"
 import Header from "../header/header"
 import Footer from "../footer/footer";
 import Left from "../left/left";
+import Right from '../right/right';
 // import { useGeneric } from '../../hooks/site-metadata-hook';
 
 // import "./layout.css"
@@ -11,10 +12,10 @@ import "./layout.scss"
 const Layout = ({ children }) => {
   return <div className='container'>
     <Header></Header>
-    <Left className="left"></Left>
+    <Left></Left>
     {/* <div className="left"></div> */}
     <main className='main'>{children}</main>
-    <div className='right'></div>
+    <Right></Right>
     <Footer></Footer>
   </div>
 }

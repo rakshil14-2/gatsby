@@ -9,6 +9,7 @@ import styles from './main.module.scss';
 function Main() {
     const { offersAllImagesFluid, offersAllImagesFixed } = useOffers();
 
+    const x = 0;
     function getFormattedCurrency(amount) {
         return new Intl.NumberFormat('en-IN', { style: "currency", currency: 'INR', minimumFractionDigits: 0 }).format(amount);
     }
