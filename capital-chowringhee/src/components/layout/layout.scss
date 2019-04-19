@@ -4,7 +4,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 250px minmax(600px, auto) minmax(150px, 220px);
+    grid-template-columns: minmax(0px,250px) minmax(600px, auto) minmax(0px, 220px);
     grid-template-rows: 48px auto 32px;
     grid-template-areas:
         "header header header"
@@ -14,22 +14,9 @@ body {
     min-height: 99.5vh;
     height: auto;
 
-    // .left {
-    //     grid-area: left;
-    //     background-color: bisque;
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-
-    //     .left-item {
-    //         width: 90%;
-    //         margin-top: 1rem;
-    //     }
+    // .right {
+    //     background-color: aqua
     // }
-
-    .right {
-        background-color: aqua
-    }
 
     .footer {
         grid-area: footer;

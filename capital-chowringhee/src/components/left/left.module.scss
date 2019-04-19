@@ -1,8 +1,7 @@
 .left {
   grid-area: left;
-  background-color: white;
+  background-color: rgb(226, 216, 216);
   display:grid;
   grid-template-columns: 100%;
   grid-template-rows: 100px;
-  max-height: 100vh;
 }

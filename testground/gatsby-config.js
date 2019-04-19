@@ -25,6 +25,13 @@ module.exports = {
         path: `${__dirname}/src/images/products/offers`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `showcase`,
+        path: `${__dirname}/src/images/products/showcase`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
