@@ -1,15 +1,17 @@
 import React from "react";
 import ImageProcessor from "../components/image-processor";
+import Layout from "../components/layout";
 
-export const organizationConfig = {
-    kanchoShokeiMatsui: () => { return <div className="content-container">
+const kanchoShokeiMatsui = () => {
+    // const selected = state.location.state.name;
+    const matsui = <div className="content-container">
         <div className="left-inset-image-content">
             <ImageProcessor source="kanchoShokeiMatsui"></ImageProcessor>
         </div>
         <div className="body-content">
             <p>
                 Kancho Shokei Matsui (IKO, Kyokushin kai kan)
-            </p>
+        </p>
             <p>
                 Shokei (Akiyoshi) Matsui was born in Bunkyo-ku, Tokyo, on 15 th January
                 1963. As a young boy, the quiet, reserved Akiyoshi showed little sign of
@@ -19,7 +21,7 @@ export const organizationConfig = {
                 ultimate honour of being nominated Kancho (president) of the International
                 Karate Organisation Kyokushinkaikan by the legendary Mas Oyama
                 himself.
-            </p>
+        </p>
             <p>
                 Like many young people of his generation, Matsui first encountered the
                 martial arts in the form of Karate Baka Ichidai, the popular graphic novel
@@ -30,7 +32,7 @@ export const organizationConfig = {
                 mentor, it was Sosai’s proverbial creed of Ichi geki, Hissatsu that the young
                 trainee adopted as his motto. All through his fighting career, Matsui believed
                 in knocking out his opponent with a single strike.
-            </p>
+        </p>
             <p>
                 Having attained the rank of Shodan (first degree black belt) in the incredibly
                 short space of sixteen months, Matsui was allowed by Shigeo Kato, then
@@ -44,7 +46,7 @@ export const organizationConfig = {
                 motivation for his first All-Japan Open entry in 1980. His remarkable
                 fourth-place finish earned him the attention and respect of the entire
                 Kyokushin world.
-            </p>
+        </p>
             <p>
                 In 1981, Matsui entered Chuo University in Tokyo and switched to Honbu
                 Dojo, training ground of fighters like Makoto Nakamura, Keiji Sanpei and
@@ -53,7 +55,7 @@ export const organizationConfig = {
                 to prove that the previous year’s success was not just a lucky win. In the end,
                 he proved it in no uncertain terms, taking third place at the All Japan Open
                 not just that year, but the following year too.
-            </p>
+        </p>
             <p>
                 However, Matsui’s career was frequently threatened by injury – the result of
                 intensive weight-training and trials of endurance. Injuries kept him out of the
@@ -71,7 +73,7 @@ export const organizationConfig = {
                 cannot stand up any more, but you have to go on. When you are young, just
                 try once. You do not need to try it two or three times; if you do, you cannot
                 live long.” (translated from Power Karate by Ayako Shimizu).
-            </p>
+        </p>
             <p>
                 Matsui’s historic feat was accomplished on 18 th May 1986, in a Tokyo film-
                 studio decorated like the Honbu dojo, before an audience of five hundred
@@ -79,7 +81,7 @@ export const organizationConfig = {
                 each fighter had to hold small pieces of wood in his fists. Dropping one
                 would entitle the other to a waza-ari. Warming up, Matsui appeared relaxed,
                 and quite oblivious of his audience.
-            </p>
+        </p>
             <p>
                 The last successful 100-Man Kumite, Karate’s equivalent of an Olympic
                 Marathon, had been completed by Miuki Miura, thirteen years ago. Only
@@ -95,7 +97,7 @@ export const organizationConfig = {
                 sweep), Matsui finished his 100 th fight, and stayed on his feet to shake hands
                 with Sosai Oyama and receive the congratulations of his fans. He was later
                 hospitalized with dessication.
-            </p>
+        </p>
             <p>
                 Six months later, Matsui defeated his arch-rival Akira Masuda at the finals
                 of the All-Japan Open 1987, winning the title for the second year running.
@@ -111,7 +113,7 @@ export const organizationConfig = {
                 nonstop low kicks and a final knock-out kick to the head. At twenty-four, he
                 was the youngest World Champion ever. His final tournament record stands
                 at an incredible 50 wins over 6 losses.
-            </p>
+        </p>
             <p>
                 From being Chief Instructor at Honbu dojo, Matsui went on to open his own
                 school in Asakusa, Tokyo. Sosai Oyama first appointed him Branch Chief,
@@ -125,7 +127,7 @@ export const organizationConfig = {
                 World Karate Championship, International Senior and Youth
                 Championships, the ‘World Cup’ – Team Karate Championship and the
                 International Kata Championship.
-            </p>
+        </p>
             <p>
                 Under his direction, the IKO has grown to a total strength of over 12 million
                 members, with branches in 125 nations. Besides managing the entire
@@ -133,8 +135,12 @@ export const organizationConfig = {
                 teaching and spreading the culture of Kyokushin to countries round the
                 world. The global future of Kyokushin Karate seems assured, and the legacy
                 of Mas Oyama safe, in the hands of Kancho Shokei Matsui.
-            </p>
+        </p>
         </div>
-    </div>
-    }
-};
+    </div>;
+    return <Layout>
+        {matsui}
+    </Layout>
+}
+
+export default kanchoShokeiMatsui;

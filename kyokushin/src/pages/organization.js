@@ -5,7 +5,8 @@ import ImageProcessor from "../components/image-processor";
 
   const Organization = () => {
     function details(name){
-      navigate("/organization-details/", {state: { name }});
+      // navigate("/organization-details/", {state: { name }});
+      navigate('/kanchoShokeiMatsui/')
     }
     return <Layout>
             <div className="tiles-container">
