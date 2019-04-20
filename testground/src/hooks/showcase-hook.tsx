@@ -8,7 +8,7 @@ function useShowcase() {
         node {
           name
           childImageSharp {
-            fluid(maxWidth:436,maxHeight:326) {
+            fluid {
               ...GatsbyImageSharpFluid
             }
           }

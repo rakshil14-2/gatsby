@@ -67,7 +67,7 @@ function Showcase() {
 
     function getDisplayItem(item: any, index: number) {
         const temp = <div key={index}>
-            <div style={{ width: '436px', height: '326px' }}>
+            <div style={{ width: '250px', height: '250px' }}>
                 <Img fluid={itemsAllImagesFluid[item.image]}></Img>
             </div>
             <div>{item.name}</div>
