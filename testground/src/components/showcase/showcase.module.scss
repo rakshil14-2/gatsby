@@ -9,6 +9,7 @@
 .category {
     display: grid;
     grid-auto-flow: column;
+<<<<<<< HEAD
     grid-template-columns: 200px;
     grid-gap: 4rem;
     overflow-x: auto;
@@ -24,6 +25,12 @@
 .details{
     margin-top:1rem;
     margin-bottom: 2rem;
+=======
+    grid-gap: 4rem;
+    overflow-x: auto;
+    padding: 2rem;
+    // height: 320px;
+>>>>>>> ed086e5242b5290b4548584f47dc6a3e40d3cbf5
 }
 
 .name{

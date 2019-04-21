@@ -48,6 +48,33 @@ function Showcase() {
                 </p> */}
             </div>
         </div>
+<<<<<<< HEAD
+=======
+    }
+
+    function getAllItems() {
+        const allItems: any[] = [];
+        // offersJson.forEach((j: any, index: number) => {
+        //     allProducts.push(getItemFluid(offersAllImagesFluid[j.image], j, index));
+
+        // });
+        // return allProducts;
+        Object.keys(itemsAllImagesFluid).forEach((x: any, index: number) => {
+            allItems.push(
+                <div key={index} style={{ width: '436px', height: '326px' }}><Img fluid={itemsAllImagesFluid[x]}></Img></div>
+            )
+        });
+        return allItems;
+    }
+
+    function getDisplayItem(item: any, index: number) {
+        const temp = <div key={index}>
+            <div style={{ width: '250px', height: '250px' }}>
+                <Img fluid={itemsAllImagesFluid[item.image]}></Img>
+            </div>
+            <div>{item.name}</div>
+        </div>
+>>>>>>> ed086e5242b5290b4548584f47dc6a3e40d3cbf5
         return temp;
     }
 
