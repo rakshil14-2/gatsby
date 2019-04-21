@@ -1,36 +1,33 @@
 .main {
   grid-area: main;
-  background-color:white;
+  background-color: white;
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
 .product {
-  background-color:white;
+  // background-color: rgb(170, 64, 64);
   display: grid;
   grid-gap:2px;
-  grid-template-columns: 250px auto;
-  grid-template-rows: 100%;
+  grid-template-columns: 250px auto; // picture is of 250px width
+  grid-template-rows: minmax(190px,auto);//190px; //Picture is 200px of height
   grid-template-areas: "picture details";
-  padding: 1rem;
   border-top: 1px outset rgb(151, 138, 138);
-  // border-left: 1px outset rgb(151, 138, 138);
-  // border-top: 1px outset #F4F4F4;
 }
 .picture{
   grid-area: picture;
-  width:88%;
-  height:88%;
-  margin:auto;
-  padding: 1rem;
+  margin:auto; // to place the image at center
 }
+
 .details{
   grid-area: details;
   margin:1rem;
 }
 
 .heading{
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 
 .offerPrice{

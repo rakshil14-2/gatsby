@@ -21,15 +21,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/mark-down`,
+        name: "mark-down",
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `offers`,
-        path: `${__dirname}/src/images/products/offers`,
+        path: `${__dirname}/src/gallaries/offers`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `showcase`,
-        path: `${__dirname}/src/images/products/showcase`,
+        path: `${__dirname}/src/gallaries/showcase`,
       },
     },
     `gatsby-transformer-sharp`,

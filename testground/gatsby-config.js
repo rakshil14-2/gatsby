@@ -11,25 +11,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `offers`,
-        path: `${__dirname}/src/images/products/offers`,
+        path: `${__dirname}/src/gallaries/offers`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `showcase`,
-        path: `${__dirname}/src/images/products/showcase`,
+        path: `${__dirname}/src/gallaries/showcase`,
       },
     },
     `gatsby-transformer-sharp`,

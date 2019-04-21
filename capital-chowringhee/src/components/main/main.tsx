@@ -1,22 +1,23 @@
 import React from 'react';
-import { useOffers } from '../../hooks/offers-hook';
+import { useGallary } from '../../hooks/gallary-hook';
 import Img from "gatsby-image"
-import offersJson from '../../images/products/offers/offers.json';
+import offersJson from '../../gallaries/offers/offers.json';
 import styles from './main.module.scss';
 
-// &#x20B9;
-
 function Main() {
-    const { offersAllImagesFluid, offersAllImagesFixed } = useOffers();
+    // const { offersAllImagesFluid, offersAllImagesFixed } = useOffers();
+    const allImagesFixed = useGallary('offers');
 
     function getFormattedCurrency(amount) {
         return new Intl.NumberFormat('en-IN', { style: "currency", currency: 'INR', minimumFractionDigits: 0 }).format(amount);
     }
 
-    function getItemFluid(fluid: any, imageJson: any, index: number) {
-        const savePercent = ' ('.concat(String(Math.round((imageJson.mrp - imageJson.offerPrice) / imageJson.mrp * 100)),'%)');
+    function getItemFluid(fixed: any, imageJson: any, index: number) {
+        const savePercent = ' ('.concat(String(Math.round((imageJson.mrp - imageJson.offerPrice) / imageJson.mrp * 100)), '%)');
         return <div className={styles.product} key={index}>
-            <div className={styles.picture}><Img fluid={fluid} ></Img></div>
+            <div className={styles.picture}>
+                <Img fixed={fixed} ></Img>
+            </div>
             <div className={styles.details}>
                 <div>{imageJson.name}</div>
                 <div>{imageJson.descr}</div>
@@ -36,28 +37,21 @@ function Main() {
         </div>
     }
 
-    function getProductFixed(fixed: any, imageJson: any, index: number) {
-        return <div className={styles.product} key={index}>
-            <div className={styles.picture}><Img fixed={fixed} ></Img></div>
-            <div className={styles.details}>{imageJson.name.concat('. ', imageJson.descr, ' ', imageJson.specs)}</div>
-        </div>
-    }
-
     function getAllItems() {
-        const allProducts: any[] = [];
+        const allItems: any[] = [];
         offersJson.forEach((j: any, index: number) => {
-            allProducts.push(getItemFluid(offersAllImagesFluid[j.image], j, index));
-            // allProducts.push(getProductFixed(offersAllImagesFixed[j.image], j, index));
+            allItems.push(getItemFluid(allImagesFixed[j.image], j, index));
         });
-        return allProducts;
+        return allItems;
     }
 
-    const Temp = <div className={styles.main}>
-        <h1 className={styles.heading}>Special Offer</h1>
-        {
-            getAllItems().map(x => x)
-        }
-    </div>
+    const Temp =
+        <div className={styles.main}>
+            <h1 className={styles.heading}>Special Offer</h1>
+            {
+                getAllItems()
+            }
+        </div>
 
     return Temp;
 }

@@ -16,30 +16,6 @@ const Layout = ({ children }) => {
     <div className="right"></div>
     <div className="footer"></div>
   </div>
-
-
-  // <StaticQuery
-  //   query={graphql`
-  //     query SiteTitleQuery {
-  //       site {
-  //         siteMetadata {
-  //           title
-  //         }
-  //       }
-  //     }
-  //   `}
-  //   render={data => (
-  //     <div className="container">
-  //       <Header></Header>
-  //         <main className="main">{children}</main>
-  //         <footer className="footer">
-  //           © {new Date().getFullYear()}, Built with
-  //           {` `}
-  //           <a href="https://www.gatsbyjs.org">Gatsby</a>
-  //         </footer>
-  //     </div>
-  //   )}
-  // />
 }
 
 export default Layout
