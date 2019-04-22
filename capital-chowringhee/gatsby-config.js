@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Capital Chowringhee Pvt Ltd`,
+    title: `Capital Chowringhee`,
     description: `Retail shop for sales and service of electronic items. We specialize in digital cameras, SLR and mtrrorless cameras, camera lens and assessories, cellular / mobile phones, mobile phone accessory, power bank, charger, watch, headphone, microphone, earphone, laptop and desktop computer and assessory, domestic items and many more`,
     author: `Kush Infotech`,
     siteUrl:'https://quirky-bell-4d85c0.netlify.com/'
