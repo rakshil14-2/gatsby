@@ -45,11 +45,7 @@
         "image":"nikon-d3500",
         "offerPrice":16800,
         "mrp":19800,
-<<<<<<< HEAD:capital-chowringhee/src/gallaries/showcase/showcase.json
-        "category":"top3"
-=======
         "rack":"top1"
->>>>>>> ed086e5242b5290b4548584f47dc6a3e40d3cbf5:testground/src/images/products/showcase/showcase.json
     },
     {
         "name":"Nikon D5300",
@@ -61,11 +57,7 @@
         "image":"nikon-d5300",
         "offerPrice":34550,
         "mrp":67880,
-<<<<<<< HEAD:capital-chowringhee/src/gallaries/showcase/showcase.json
-        "category":"top2"
-=======
         "rack":"top1"
->>>>>>> ed086e5242b5290b4548584f47dc6a3e40d3cbf5:testground/src/images/products/showcase/showcase.json
     },
     {
         "name":"Nikon D5600",
@@ -101,11 +93,7 @@
         "image":"nikon-p500",
         "offerPrice":12300,
         "mrp":19560,
-<<<<<<< HEAD:capital-chowringhee/src/gallaries/showcase/showcase.json
-        "category":"top1"
-=======
         "rack":"top1"
->>>>>>> ed086e5242b5290b4548584f47dc6a3e40d3cbf5:testground/src/images/products/showcase/showcase.json
     },
     {
         "name":"Sony Alpha A68K",

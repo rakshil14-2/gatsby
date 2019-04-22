@@ -8,8 +8,8 @@ import Right from '../right/right';
 
 import "./layout.scss"
 
-const Layout = ({ children}) => {
-  return <div className='container'>
+const Layout = ({ children }) => {
+  return <div className='container'>    
     <Header></Header>
     <Left></Left>
     {/* <div className="left"></div> */}

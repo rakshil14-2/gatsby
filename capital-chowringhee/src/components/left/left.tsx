@@ -1,16 +1,20 @@
 import React from "react"
 import styles from './Left.module.scss';
+import { useGallary } from '../../hooks/gallary-hook';
 // import { useShowcase } from '../../hooks/showcase-hook';
 import Img from "gatsby-image"
 
 function Left() {
-    // const { allImagesFluid } = useShowcase();
+    const allImagesFixed = useGallary('shop');
+    const allImagesArray = Object.keys(allImagesFixed).map(x => allImagesFixed[x]);
+   
 
     const Temp = <div className={styles.left}>
-        {/* <h1>Showcase</h1>
-        {Object.keys(allImagesFluid).map((x: any, index: number) => {
-            return <div key={index} style={{ width: '200px', height: '200px' }}><Img fluid={allImagesFluid[x]} ></Img></div>;
-        })} */}
+        {/* {
+            allImagesArray.map((a, index) => {
+                return <Img key={index} fixed={a}></Img>
+            })
+        } */}
     </div>
 
     return Temp;

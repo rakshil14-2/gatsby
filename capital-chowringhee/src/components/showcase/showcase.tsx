@@ -5,8 +5,6 @@ import Img from "gatsby-image"
 import showcaseJson from '../../gallaries/showcase/showcase.json';
 import styles from './showcase.module.scss';
 
-// &#x20B9;
-
 function Showcase() {
     const allImagesFixed = useGallary('showcase');
 
@@ -35,17 +33,6 @@ function Showcase() {
                 <div className={styles.name}>{item.name}</div>
                 <div>{item.descr}</div>
                 <div>{item.specs}</div>
-                {/* <p>
-                    <span className={styles.price}>
-                        {getFormattedCurrency(item.offerPrice)}
-                    </span>
-                    <del className={styles.mrp}>
-                        {getFormattedCurrency(item.mrp)}
-                    </del>
-                    <span className={styles.save}>
-                        Save {getFormattedCurrency(item.mrp - item.offerPrice)}{savePercent}
-                    </span>
-                </p> */}
             </div>
         </div>
         return temp;
@@ -72,7 +59,20 @@ function Showcase() {
 }
 
 export default Showcase;
+
 /*
+
+                {<p>
+                    <span className={styles.price}>
+                        {getFormattedCurrency(item.offerPrice)}
+                    </span>
+                    <del className={styles.mrp}>
+                        {getFormattedCurrency(item.mrp)}
+                    </del>
+                    <span className={styles.save}>
+                        Save {getFormattedCurrency(item.mrp - item.offerPrice)}{savePercent}
+                    </span>
+                </p> }
 // function getItemFluid(fluid: any, imageJson: any, index: number) {
     //     const savePercent = ' ('.concat(String(Math.round((imageJson.mrp - imageJson.offerPrice) / imageJson.mrp * 100)), '%)');
     //     return <div className={styles.product} key={index}>

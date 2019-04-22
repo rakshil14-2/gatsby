@@ -28,6 +28,19 @@ function useGallary(source: string) {
           }
         }
       }
+      shop:
+      allFile(filter:{sourceInstanceName: {eq:"shop"}, extension:{ne:"json"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fixed(width:200) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
     }`;
 
   const allData = useStaticQuery(gql);
