@@ -4,6 +4,7 @@ date: "2019-04-21"
 title: "About"
 name: "about"
 ---
+
 **About:** Capital Chowringhee Pvt Ltd is one of the leading retailers of electronics goods in heart of Kolkata city at 12 J.L. Nehru Road. It was founded in year 1991. Its root lies in legendry electronic retail shop of Capital Electronics. It belongs to the same family of business house which owns Capital Electronics.
 
 ![shop-1, Nikon counter](shop-1.jpg) ![shop-1, Nikon counter](shop-1.jpg)
