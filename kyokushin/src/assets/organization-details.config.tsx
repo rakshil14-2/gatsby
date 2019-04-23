@@ -2,15 +2,15 @@ import React from "react";
 import ImageProcessor from "../components/image-processor";
 
 export const organizationDetailsConfig = {
-    KanchoShokeiMatsui: () => kanchoShokeiMatsui
+    shokeiMatsui: () => shokeiMatsui
 };
 
 
 
 
-const kanchoShokeiMatsui = <div className="content-container">
+const shokeiMatsui = <div className="content-container">
                             <div className="left-inset-image-content">
-                                <ImageProcessor source="kanchoShokeiMatsui"></ImageProcessor>
+                                <ImageProcessor source="shokeiMatsui"></ImageProcessor>
                             </div>
                             <div className="body-content">
                                 <p>

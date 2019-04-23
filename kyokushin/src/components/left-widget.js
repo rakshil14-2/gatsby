@@ -1,6 +1,6 @@
 import React from "react";
-import WidgetProcessor from "../components/widget-processor";
+import ImageProcessor from "../components/image-processor";
 
 export default () => (
-  <WidgetProcessor source="leftWidget"></WidgetProcessor>
+  <ImageProcessor source="logo"></ImageProcessor>
 )

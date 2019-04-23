@@ -15,15 +15,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `left-widget`,
-        path: `${__dirname}/src/images/left-widget`,
+        name: `mas-oyama`,
+        path: `${__dirname}/src/images/mas-oyama`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `right-widget`,
-        path: `${__dirname}/src/images/right-widget`,
+        name: `shokei_matsui`,
+        path: `${__dirname}/src/images/shokei_matsui`,
       },
     },
     {

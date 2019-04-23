@@ -12,16 +12,32 @@ function ImageProcessor({ source }) {
           }
         }
       }
-    kanchoShokeiMatsui:
+      shokeiMatsui:
       file(relativePath: { eq: "kancho_shokei_matsui.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
+      },
+    prasenjitSaha:
+      file(relativePath: { eq: "prasenjit_saha.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
     homeBanner:
       file(relativePath: { eq: "banner.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 900) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+    logo: 
+      file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid

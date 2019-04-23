@@ -4,8 +4,8 @@ import Img from "gatsby-image"
 
 function WidgetProcessor({ source }) {
   const widgetGql = graphql`{
-  qr1:
-  allFile(filter: {sourceInstanceName: {eq: "left-widget"}}) {
+  shokeiMatsui:
+  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "shokei_matsui"}}) {
     edges {
       node {
         childImageSharp {
@@ -16,8 +16,8 @@ function WidgetProcessor({ source }) {
       }
     }
   }
-  qr2:
-  allFile(filter: {sourceInstanceName: {eq: "right-widget"}}) {
+  masOyama:
+  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "mas-oyama"}}) {
     edges {
       node {
         childImageSharp {
@@ -32,8 +32,8 @@ function WidgetProcessor({ source }) {
 
   const data = useStaticQuery(widgetGql);
   const sourceObject = {
-    leftWidget: data.qr1.edges,
-    rightWidget: data.qr2.edges
+    shokeiMatsui: data.shokeiMatsui.edges,
+    masOyama: data.masOyama.edges
   }
 
   const Temp = sourceObject[source].map((x: any, index: number) => {

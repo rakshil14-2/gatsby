@@ -6,8 +6,10 @@ import RightWidget from "./right-widget";
 import layoutStyles from "./layout.module.scss";
 
 
-export default ({ children }) => (
-  <div className={layoutStyles.container}>
+const Layout = (props) => {
+  let imageSource;
+  props.imageSource ? imageSource = props.imageSource : imageSource = 'masOyama';
+  return <div className={layoutStyles.container}>
     <div className={layoutStyles.header}>
       <Header></Header>
     </div>
@@ -15,13 +17,15 @@ export default ({ children }) => (
       <LeftWidget></LeftWidget>
     </div>
     <div className={layoutStyles.main}>
-      {children}
+      {props.children}
     </div>
     <div className={layoutStyles.rightWidget}>
-      <RightWidget></RightWidget>
+      <RightWidget source={imageSource}></RightWidget>
     </div>
     <div className={layoutStyles.footer}>
       <Footer></Footer>
     </div>
   </div>
-)
+}
+
+export default Layout;

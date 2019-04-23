@@ -27,7 +27,7 @@ export default () => (
             <Link to="/gurukul/">Gurukul</Link>
             <Link to="/gallery/">Gallery</Link>
             <Link to="/events/">Events</Link>
-            <Link to="/dojo/">Dojo</Link>
+            <Link to="/dojo-kun/">Dojo Kun</Link>
             <Link to="/contact/">Contact</Link>
         </div>
     </div>

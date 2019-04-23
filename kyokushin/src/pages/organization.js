@@ -5,15 +5,16 @@ import ImageProcessor from "../components/image-processor";
 
   const Organization = () => {
     function details(name){
-      // navigate("/organization-details/", {state: { name }});
-      navigate('/kanchoShokeiMatsui/')
+      navigate("/organization-details/", {
+        state: { name },
+      });
     }
-    return <Layout>
-            <div className="tiles-container">
-              <a onClick={ e => details('KanchoShokeiMatsui')}>
-                <div className="tiles">
+    return <Layout imageSource="shokeiMatsui">
+            <div className="tiles-container-organization">
+              <a onClick={ e => details('shokeiMatsui')}>
+                <div className="wide-tile">
                   <div className="left-tile-image-content">
-                    <ImageProcessor source="kanchoShokeiMatsui"></ImageProcessor>
+                    <ImageProcessor source="shokeiMatsui"></ImageProcessor>
                   </div>
                   <div className="right-tile-content">
                     <p>
