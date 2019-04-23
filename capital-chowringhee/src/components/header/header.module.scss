@@ -2,29 +2,29 @@
     grid-area: header;
     background-color: #5f84b1;
     display: grid;
-    grid-template-columns: 250px auto 200px;
-    grid-auto-rows: 38px;
+    grid-template-columns: minmax(0,250px) minmax(600px, auto) minmax(0px, 220px);
     grid-template-areas: "header-left header-main header-right";
     font-family: monospace;
+    
 }
 
 .headerLeft {
     grid-area: header-left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-left: 5px;
     a {
         color: white;
         text-decoration: none;
     }
+    // display:flex;
+    // flex-direction: row;
+    // align-items: center;
+    overflow: hidden;
+    // margin-top:auto;
+    // margin-bottom: auto;
 }
 
 .headerMain {
     grid-area: header-main;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     font-size: 1.2rem;
     color: white;
     a {
@@ -35,7 +35,10 @@
     a:hover {
         color: red;
     }
-
+    margin-top:auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    margin-left: 2px;
 }
 
 .link{
@@ -48,11 +51,10 @@
 
 .headerRight {
     grid-area: header-right;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     font-size: 1.2rem;
-
+    margin-top:auto;
+    margin-bottom: auto;
+    overflow: hidden;
     a {
         color: white;
     }
