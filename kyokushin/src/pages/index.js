@@ -1,11 +1,13 @@
 import React from "react";
 import Layout from "../components/layout"
 import ImageProcessor from "../components/image-processor";
+import CarouselProcessor from "../components/carousel-processor";
 
 export default () => (
   <Layout imageSource="masOyama"> 
     <div className="home-banner-image-content">
-        <ImageProcessor source="homeBanner"></ImageProcessor>
+        {/* <ImageProcessor source="homeBanner"></ImageProcessor> */}
+        <CarouselProcessor></CarouselProcessor>
     </div>
     <div className="primary-question">
       What is Kyokushin ?
