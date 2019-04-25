@@ -1,17 +1,5 @@
 [
     {
-        "name":"Nikon D810",
-        "specs":"At dolore scripta sed.",
-        "descr":"mel  ius at eirmod maiestatis, vis eu sint altera fastidii.",
-        "year":"",
-        "month":"",
-        "launch":"",
-        "image":"nikon-d810",
-        "offerPrice":14990,
-        "mrp":16990,
-        "category":"top1"
-    },
-    {
         "name":"Canon EOS 800D",
         "specs":"",
         "descr":"",
@@ -21,7 +9,7 @@
         "image":"canon-eos-800d",
         "offerPrice":12799,
         "mrp":13990,
-        "category":"top1"
+        "category":"camera"
     },
     {
         "name":"Nikon B500",
@@ -31,92 +19,44 @@
         "month":"",
         "launch":"",
         "image":"nikon-b500",
-        "offerPrice":16799,
-        "mrp":19990,
-        "category":"top2"
+        "offerPrice":12799,
+        "mrp":13990,
+        "category":"DSLR"
     },
     {
-        "name":"Nikon D3500",
+        "name":"Samsung 28H4100",
         "specs":"",
         "descr":"",
         "year":"",
         "month":"",
         "launch":"",
-        "image":"nikon-d3500",
-        "offerPrice":16800,
-        "mrp":19800,
-        "rack":"top1"
+        "image":"samsung-28h4100",
+        "offerPrice":12799,
+        "mrp":13990,
+        "category":"LED"
     },
     {
-        "name":"Nikon D5300",
+        "name":"Sony 29P423D",
         "specs":"",
         "descr":"",
         "year":"",
         "month":"",
         "launch":"",
-        "image":"nikon-d5300",
-        "offerPrice":34550,
-        "mrp":67880,
-        "rack":"top1"
+        "image":"sony-29p423d",
+        "offerPrice":12799,
+        "mrp":13990,
+        "category":"LED"
     },
     {
-        "name":"Nikon D5600",
+        "name":"VU 40D6575",
         "specs":"",
         "descr":"",
         "year":"",
         "month":"",
         "launch":"",
-        "image":"nikon-d5600",
-        "offerPrice":32445,
-        "mrp":55668,
-        "category":"top1"
-    },
-    {
-        "name":"Nikon D7200",
-        "specs":"",
-        "descr":"",
-        "year":"",
-        "month":"",
-        "launch":"",
-        "image":"nikon-d7200",
-        "offerPrice":124445,
-        "mrp":134556,
-        "category":"top1"
-    },
-    {
-        "name":"Nikon P500",
-        "specs":"",
-        "descr":"",
-        "year":"",
-        "month":"",
-        "launch":"",
-        "image":"nikon-p500",
-        "offerPrice":12300,
-        "mrp":19560,
-        "rack":"top1"
-    },
-    {
-        "name":"Sony Alpha A68K",
-        "specs":"24.2 MP",
-        "descr":"",
-        "year":"",
-        "month":"",
-        "launch":"",
-        "image":"sony-ilca-68k",
-        "offerPrice":40000,
-        "mrp":58990,
-        "category":"top1"
-    },
-    {
-        "name":"Sony Mirrorless Camera",
-        "specs":"20.1 MP",
-        "descr":"",
-        "year":"",
-        "month":"",
-        "launch":"",
-        "image":"sony-ilce-5000l",
-        "offerPrice":27000,
-        "mrp":33950,
-        "category":"top1"
+        "image":"vu-40d6575",
+        "offerPrice":12799,
+        "mrp":13990,
+        "category":"LED"
     }
 ]

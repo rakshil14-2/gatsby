@@ -6,7 +6,7 @@ import showcaseJson from '../../gallaries/showcase/showcase.json';
 import styles from './showcase.module.scss';
 
 function Showcase() {
-    const allImagesFixed = useGallary('showcase');
+    const {allImagesFixed} = useGallary('showcase');
 
     function toCategoriesObject(itemsMeta: any[]) {
         const categoriesObject = {};

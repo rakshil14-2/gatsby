@@ -1,7 +1,18 @@
 .left {
-  grid-area: left;
-  background-color: rgb(226, 216, 216);
-  display:grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100px;
+    grid-area: left;
+    background-color: rgb(226, 216, 216);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+
+    div {
+        width: 100%;
+        color:red;
+        overflow: hidden;
+    }
+}
+
+.heading {
+    // margin:1rem;
+    width: 100%;
 }

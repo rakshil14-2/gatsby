@@ -1,17 +1,18 @@
 import React from "react"
 import styles from './right.module.scss';
-// import { useShowcase } from '../../hooks/showcase-hook';
+import { useGallary } from '../../hooks/gallary-hook';
 import Img from "gatsby-image"
 
 function Right({children}) {
-    // const { allImagesFluid } = useShowcase();
+    const {allImagesFluid} = useGallary('brands','fluid');
+    const allImagesArray = Object.keys(allImagesFluid).map(x => allImagesFluid[x]);
 
-    const Temp = <div className={styles.right}>
-    {children}
-        {/* <h1>Showcase</h1>
-        {Object.keys(allImagesFluid).map((x: any, index: number) => {
-            return <div key={index} style={{ width: '200px', height: '200px' }}><Img fluid={allImagesFluid[x]} ></Img></div>;
-        })} */}
+    const Temp = <div className={styles.left}>
+        {
+            allImagesArray.map((a, index) => {
+                return <div key={index} className={styles.brands}><Img  fluid={a}></Img></div>
+            })
+        }
     </div>
 
     return Temp;
