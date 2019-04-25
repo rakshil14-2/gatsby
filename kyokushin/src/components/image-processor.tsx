@@ -28,14 +28,6 @@ function ImageProcessor({ source }) {
           }
         }
       },
-    homeBanner:
-      file(relativePath: { eq: "banner.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 900) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
     logo: 
       file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
@@ -43,8 +35,24 @@ function ImageProcessor({ source }) {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+    dojoKunBanner:
+      file(relativePath: { eq: "dojo-kun-banner.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+    prasenjitSahaGurukul:
+      file(relativePath: {eq: "prasenjit_saha_gurukul.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
-   }`
+   }`;
 
   const data = useStaticQuery(imgGql);
   return <Img key={source} fluid={data[source].childImageSharp.fluid}></Img>;

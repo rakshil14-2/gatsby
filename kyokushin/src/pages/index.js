@@ -6,7 +6,6 @@ import CarouselProcessor from "../components/carousel-processor";
 export default () => (
   <Layout imageSource="masOyama"> 
     <div className="home-banner-image-content">
-        {/* <ImageProcessor source="homeBanner"></ImageProcessor> */}
         <CarouselProcessor></CarouselProcessor>
     </div>
     <div className="primary-question">

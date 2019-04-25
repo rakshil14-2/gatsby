@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 function WidgetProcessor({ source }) {
   const widgetGql = graphql`{
   shokeiMatsui:
-  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "shokei_matsui"}}) {
+  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "shokei-matsui"}}) {
     edges {
       node {
         childImageSharp {
@@ -15,13 +15,25 @@ function WidgetProcessor({ source }) {
         }
       }
     }
-  }
+  },
   masOyama:
   allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "mas-oyama"}}) {
     edges {
       node {
         childImageSharp {
-          fluid(maxWidth: 2000) {
+          fluid{
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  },
+  prasenjitSaha: 
+  allFile( sort: { fields: [name]}, filter: {sourceInstanceName: {eq: "prasenjit-saha"}}) {
+    edges {
+      node {
+        childImageSharp {
+          fluid{
             ...GatsbyImageSharpFluid
           }
         }
@@ -33,7 +45,8 @@ function WidgetProcessor({ source }) {
   const data = useStaticQuery(widgetGql);
   const sourceObject = {
     shokeiMatsui: data.shokeiMatsui.edges,
-    masOyama: data.masOyama.edges
+    masOyama: data.masOyama.edges,
+    prasenjitSaha: data.prasenjitSaha.edges
   }
 
   const Temp = sourceObject[source].map((x: any, index: number) => {

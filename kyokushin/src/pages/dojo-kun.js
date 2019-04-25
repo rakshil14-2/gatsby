@@ -1,9 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
+import ImageProcessor from "../components/image-processor";
 
 export default () => (
-    <Layout>
+    <Layout imageSource="prasenjitSaha">
       <div className="dojo-kun">
+        <div className="banner">
+          <ImageProcessor source="dojoKunBanner"></ImageProcessor>
+        </div>
         <div className="page-title"> DOJO KUN </div>
         <ol>
           <li> We will train our hearts and bodies for a firm unshaking spirit. </li>
