@@ -1,0 +1,39 @@
+[
+    {
+        "name":"Kamalika Roy",
+        "designation":"General Manager",
+        "mobile":"",
+        "email":""
+    },
+    {
+        "name":"Samar Das",
+        "designation":"Nikon product consultant",
+        "mobile":"9903177904",
+        "email":""
+    },
+    {
+        "name":"Pulak Das",
+        "designation":"Sales manager",
+        "mobile":"",
+        "email":""
+    },
+    {
+        "name":"Kinkar Dutta",
+        "designation":"Sales consultant",
+        "mobile":"",
+        "email":""
+    },
+    {
+        "name":"Radha",
+        "designation":"Casio service manager",
+        "mobile":"",
+        "email":""
+    },
+    {
+        "name":"Radha",
+        "designation":"Casio service manager",
+        "mobile":"",
+        "email":""
+    }
+
+]

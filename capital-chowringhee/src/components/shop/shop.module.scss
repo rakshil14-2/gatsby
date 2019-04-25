@@ -1,0 +1,12 @@
+.shop {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 600px);
+    grid-gap: 2rem;
+    padding:2rem;
+    background-color: burlywood;
+    justify-content: center;
+    height:97vh;
+    overflow-y: scroll;
+}

@@ -3,7 +3,7 @@
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-rows: 200px;
-    // grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 }
 
 .category {
@@ -12,20 +12,18 @@
     grid-template-columns: 200px;
     grid-gap: 4rem;
     overflow-x: auto;
-    margin-left:2rem;
-    
-    // background-color: antiquewhite;
+    margin-left: 2rem;
 }
 
-.heading{
-    margin-left:2rem;
+.heading {
+    margin-left: 2rem;
 }
 
-.details{
-    margin-top:1rem;
+.details {
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.name{
+.name {
     font-weight: bold;
 }
