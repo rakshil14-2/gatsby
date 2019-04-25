@@ -12,7 +12,6 @@ const Layout = ({ children }) => {
   return <div className='container'>    
     <Header></Header>
     <Left></Left>
-    {/* <div className="left"></div> */}
     <main className='main'>{children}</main>
     <Right></Right>
     <Footer></Footer>

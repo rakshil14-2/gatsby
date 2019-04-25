@@ -48,8 +48,6 @@ function Showcase() {
                 </p> */}
             </div>
         </div>
-<<<<<<< HEAD
-=======
     }
 
     function getAllItems() {
@@ -74,7 +72,6 @@ function Showcase() {
             </div>
             <div>{item.name}</div>
         </div>
->>>>>>> ed086e5242b5290b4548584f47dc6a3e40d3cbf5
         return temp;
     }
 

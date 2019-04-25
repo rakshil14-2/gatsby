@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-function useGallary(source: string) {
+function useGallary(source: string, type = 'fixed') {
   const gql = graphql`{
       offers:
       allFile(filter:{sourceInstanceName: {eq:"offers"}, extension:{ne:"json"}}) {
@@ -28,6 +28,19 @@ function useGallary(source: string) {
           }
         }
       }
+      showcaseFluid:
+      allFile(filter:{sourceInstanceName: {eq:"showcase"}, extension:{ne:"json"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
       shop:
       allFile(filter:{sourceInstanceName: {eq:"shop"}, extension:{ne:"json"}}) {
         edges {
@@ -41,14 +54,32 @@ function useGallary(source: string) {
           }
         }
       }
+      brands:
+      allFile(filter:{sourceInstanceName: {eq:"brands"}, extension:{ne:"json"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid(maxWidth:250) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }`;
 
   const allData = useStaticQuery(gql);
-  const allImagesFixed = {};
+  const allImagesFixed = {}, allImagesFluid = {};
   allData[source].edges.forEach(x => {
-    allImagesFixed[x.node.name] = x.node.childImageSharp.fixed;
+    if (type === 'fixed') {
+      allImagesFixed[x.node.name] = x.node.childImageSharp.fixed;
+    }
+    else {
+      allImagesFluid[x.node.name] = x.node.childImageSharp.fluid;
+    }
   })
-  return allImagesFixed;
+  return { allImagesFixed, allImagesFluid };
 }
 
 export { useGallary };

@@ -66,6 +66,13 @@ module.exports = {
         path: `${__dirname}/src/gallaries/showcase`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `brands`,
+        path: `${__dirname}/src/gallaries/brands`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
