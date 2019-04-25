@@ -5,13 +5,13 @@ import { useGallary } from '../../hooks/gallary-hook';
 import Img from "gatsby-image"
 
 function Left() {
-    // const {allImagesFluid} = useGallary('brands','fluid');
-    // const allImagesArray = Object.keys(allImagesFluid).map(x => allImagesFluid[x]);
-   
-
+    const {allImagesFluid} = useGallary('brands','fluid');
+    const allImagesArray = Object.keys(allImagesFluid).map(x => allImagesFluid[x]);
     const Temp = <div className={styles.left}>
         {
-           <div >Product categories</div>
+            allImagesArray.map((a, index) => {
+                return <div key={index} className={styles.brands}><Img  fluid={a}></Img></div>
+            })
         }
     </div>
 

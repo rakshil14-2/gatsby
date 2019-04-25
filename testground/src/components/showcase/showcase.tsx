@@ -35,45 +35,29 @@ function Showcase() {
                 <div className={styles.name}>{item.name}</div>
                 <div>{item.descr}</div>
                 <div>{item.specs}</div>
-                {/* <p>
-                    <span className={styles.price}>
-                        {getFormattedCurrency(item.offerPrice)}
-                    </span>
-                    <del className={styles.mrp}>
-                        {getFormattedCurrency(item.mrp)}
-                    </del>
-                    <span className={styles.save}>
-                        Save {getFormattedCurrency(item.mrp - item.offerPrice)}{savePercent}
-                    </span>
-                </p> */}
             </div>
         </div>
     }
 
     function getAllItems() {
         const allItems: any[] = [];
-        // offersJson.forEach((j: any, index: number) => {
-        //     allProducts.push(getItemFluid(offersAllImagesFluid[j.image], j, index));
-
-        // });
-        // return allProducts;
-        Object.keys(itemsAllImagesFluid).forEach((x: any, index: number) => {
+        Object.keys(allImagesFixed).forEach((x: any, index: number) => {
             allItems.push(
-                <div key={index} style={{ width: '436px', height: '326px' }}><Img fluid={itemsAllImagesFluid[x]}></Img></div>
+                <div key={index} style={{ width: '436px', height: '326px' }}><Img fixed={allImagesFixed[x]}></Img></div>
             )
         });
         return allItems;
     }
 
-    function getDisplayItem(item: any, index: number) {
-        const temp = <div key={index}>
-            <div style={{ width: '250px', height: '250px' }}>
-                <Img fluid={itemsAllImagesFluid[item.image]}></Img>
-            </div>
-            <div>{item.name}</div>
-        </div>
-        return temp;
-    }
+    // function getDisplayItem(item: any, index: number) {
+    //     const temp = <div key={index}>
+    //         <div style={{ width: '250px', height: '250px' }}>
+    //             <Img fluid={itemsAllImagesFluid[item.image]}></Img>
+    //         </div>
+    //         <div>{item.name}</div>
+    //     </div>
+    //     return temp;
+    // }
 
     const categoriesObject: any = toCategoriesObject(showcaseJson);
     const categoriesObjectKeys: string[] = Object.keys(categoriesObject);

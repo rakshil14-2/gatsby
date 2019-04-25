@@ -1,9 +1,8 @@
 import React from "react"
-// import { StaticQuery, graphql } from "gatsby"
 import Header from "../header/header"
 import Footer from "../footer/footer";
 import Left from "../left/left";
-import Right from '../right/right';
+// import Right from '../right/right';
 // import { useGeneric } from '../../hooks/site-metadata-hook';
 
 import "./layout.scss"
@@ -12,8 +11,8 @@ const Layout = ({ children }) => {
   return <div className='container'>    
     <Header></Header>
     <Left></Left>
-    <main className='main'>{children}</main>
-    <Right></Right>
+    <main>{children}</main>
+    {/* <Right></Right> */}
     <Footer></Footer>
   </div>
 }

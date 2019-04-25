@@ -12,7 +12,7 @@ function Main() {
         return new Intl.NumberFormat('en-IN', { style: "currency", currency: 'INR', minimumFractionDigits: 0 }).format(amount);
     }
 
-    function getItemFluid(fixed: any, imageJson: any, index: number) {
+    function getItemFixed(fixed: any, imageJson: any, index: number) {
         const savePercent = ' ('.concat(String(Math.round((imageJson.mrp - imageJson.offerPrice) / imageJson.mrp * 100)), '%)');
         return <div className={styles.product} key={index}>
             <div className={styles.picture}>
@@ -40,7 +40,7 @@ function Main() {
     function getAllItems() {
         const allItems: any[] = [];
         offersJson.forEach((j: any, index: number) => {
-            allItems.push(getItemFluid(allImagesFixed[j.image], j, index));
+            allItems.push(getItemFixed(allImagesFixed[j.image], j, index));
         });
         return allItems;
     }

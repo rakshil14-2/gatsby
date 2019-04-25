@@ -55,7 +55,7 @@ function useGallary(source: string, type = 'fixed') {
         }
       }
       brands:
-      allFile(filter:{sourceInstanceName: {eq:"brands"}, extension:{ne:"json"}}) {
+      allFile(filter:{sourceInstanceName: {eq:"brands"}, extension:{ne:"json"}} ,  sort:{fields:name}) {
         edges {
           node {
             name
