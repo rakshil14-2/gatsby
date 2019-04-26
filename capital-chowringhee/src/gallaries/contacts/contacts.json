@@ -1,0 +1,59 @@
+[
+    {
+        "name":"Kamalika Roy",
+        "designation":"General Manager",
+        "mobile":"",
+        "email":"",
+        "image":"b1",
+        "order":4
+    },
+    {
+        "name":"Samar Das",
+        "designation":"Nikon product consultant",
+        "mobile":"9903177904",
+        "email":"",
+        "image":"b2",
+        "order":1
+    },
+    {
+        "name":"Pulak Das",
+        "designation":"Sales manager",
+        "mobile":"",
+        "email":"",
+        "image":"b3",
+        "order":3
+    },
+    {
+        "name":"Kinkar Dutta",
+        "designation":"Sales consultant",
+        "mobile":"",
+        "email":"",
+        "image":"b1",
+        "order":2
+    },
+    {
+        "name":"Radha Molla",
+        "designation":"Casio service manager from Capital Electronics",
+        "mobile":"",
+        "email":"",
+        "image":"b5",
+        "order":6
+    },
+    {
+        "name":"Abhishek Agarwal",
+        "designation":"Nikon service manager From Billenium Sales",
+        "mobile":"",
+        "email":"",
+        "image":"b6",
+        "order":5
+    },
+    {
+        "name":"Subrata Sen",
+        "designation":"Operations manager",
+        "mobile":"",
+        "email":"",
+        "image":"b7",
+        "order":7
+    }
+
+]

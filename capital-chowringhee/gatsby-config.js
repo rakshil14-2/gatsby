@@ -73,6 +73,13 @@ module.exports = {
         path: `${__dirname}/src/gallaries/brands`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `contacts`,
+        path: `${__dirname}/src/gallaries/contacts`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

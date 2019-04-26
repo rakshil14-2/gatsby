@@ -4,7 +4,7 @@ import styles from './header.module.scss';
 
 function HeaderRight(){
     return <div className={styles.headerRight}>
-    <Link to='/'>Login</Link>
+    {/* <Link to='/'>Login</Link> */}
     </div>
 }
 

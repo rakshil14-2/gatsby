@@ -1,0 +1,11 @@
+.contact{
+    grid-area: "main";
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 600px);
+    grid-gap: 2rem;
+    padding:2rem;
+    background-color: cornsilk;
+    justify-content: center;
+    max-height:88vh;
+    overflow-y: scroll;
+}

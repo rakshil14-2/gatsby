@@ -47,7 +47,7 @@ function useGallary(source: string, type = 'fixed') {
           node {
             name
             childImageSharp {
-              fixed(width:200) {
+              fixed(height:400) {
                 ...GatsbyImageSharpFixed
               }
             }
@@ -62,6 +62,19 @@ function useGallary(source: string, type = 'fixed') {
             childImageSharp {
               fluid(maxWidth:250) {
                 ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+      contacts:
+      allFile(filter:{sourceInstanceName: {eq:"contacts"}, extension:{ne:"json"}} ) {
+        edges {
+          node {
+            name            
+            childImageSharp {
+              fixed(height:340) {
+               ...GatsbyImageSharpFixed
               }
             }
           }
