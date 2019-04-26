@@ -6,8 +6,8 @@
 
   grid-template-columns: repeat(auto-fill, minmax(650px,auto) );
 
-  max-height: 95vh;
-  overflow-y: auto;
+  max-height: 94vh;
+  overflow-y: scroll;
 }
 .product {
   display: grid;

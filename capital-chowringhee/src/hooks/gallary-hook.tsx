@@ -67,6 +67,19 @@ function useGallary(source: string, type = 'fixed') {
           }
         }
       }
+      contacts:
+      allFile(filter:{sourceInstanceName: {eq:"contacts"}, extension:{ne:"json"}} ) {
+        edges {
+          node {
+            name            
+            childImageSharp {
+              fixed(height:340) {
+               ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
     }`;
 
   const allData = useStaticQuery(gql);
