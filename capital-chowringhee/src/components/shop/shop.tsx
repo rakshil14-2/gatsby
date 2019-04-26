@@ -4,14 +4,14 @@ import Img from "gatsby-image"
 import styles from './shop.module.scss';
 
 function Shop() {
-    const { allImagesFixed } = useGallary('shop');
+    const { allImagesFluid } = useGallary('shopFluid','fluid');
 
-    const allImages = Object.keys(allImagesFixed).map(x => allImagesFixed[x]);
+    const allImages = Object.keys(allImagesFluid).map(x => allImagesFluid[x]);
 
     const Temp = <div className={styles.shop}>
         {
             allImages.map((x, index) => {
-                return <Img key={index} fixed={x}></Img>
+                return <Img key={index} fluid={x}></Img>
             })
         }
     </div>

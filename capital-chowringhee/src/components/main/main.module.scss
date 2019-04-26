@@ -2,9 +2,9 @@
   grid-area: main;
   background-color: white;
   display: grid;
-  // grid-template-columns: minmax(600px,auto);
 
-  grid-template-columns: repeat(auto-fill, minmax(40%,auto) );
+
+  grid-template-columns: repeat(auto-fill, minmax(550px,auto) );
 
   max-height: 94vh;
   overflow-y: scroll;
