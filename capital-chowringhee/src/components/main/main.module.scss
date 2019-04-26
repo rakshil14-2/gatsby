@@ -4,7 +4,7 @@
   display: grid;
   // grid-template-columns: minmax(600px,auto);
 
-  grid-template-columns: repeat(auto-fill, minmax(650px,auto) );
+  grid-template-columns: repeat(auto-fill, minmax(40%,auto) );
 
   max-height: 94vh;
   overflow-y: scroll;
