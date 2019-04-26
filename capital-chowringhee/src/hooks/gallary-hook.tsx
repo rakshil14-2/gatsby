@@ -54,6 +54,19 @@ function useGallary(source: string, type = 'fixed') {
           }
         }
       }
+      shopFluid:
+      allFile(filter:{sourceInstanceName: {eq:"shop"}, extension:{ne:"json"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
       brands:
       allFile(filter:{sourceInstanceName: {eq:"brands"}, extension:{ne:"json"}} ,  sort:{fields:name}) {
         edges {
