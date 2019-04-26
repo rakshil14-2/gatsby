@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { useGallary } from '../../hooks/gallary-hook';
 import Img from "gatsby-image"
 import offersJson from '../../gallaries/offers/offers.json';
@@ -6,7 +6,7 @@ import styles from './main.module.scss';
 
 function Main() {
     // const { offersAllImagesFluid, offersAllImagesFixed } = useOffers();
-    const {allImagesFixed} = useGallary('offers');
+    const { allImagesFixed } = useGallary('offers');
 
     function getFormattedCurrency(amount) {
         return new Intl.NumberFormat('en-IN', { style: "currency", currency: 'INR', minimumFractionDigits: 0 }).format(amount);
@@ -46,13 +46,15 @@ function Main() {
     }
 
     const Temp =
-        <div className={styles.main}>
+        <Fragment>
             <h1 className={styles.heading}>Special Offer</h1>
-            {
-                getAllItems()
-            }
-        </div>
+            <div className={styles.main}>
 
+                {
+                    getAllItems()
+                }
+            </div>
+        </Fragment>
     return Temp;
 }
 

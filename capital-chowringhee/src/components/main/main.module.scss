@@ -3,47 +3,45 @@
   background-color: white;
   display: grid;
 
-
-  grid-template-columns: repeat(auto-fill, minmax(550px,auto) );
+  grid-template-columns: repeat(auto-fill, 500px);
 
   max-height: 94vh;
   overflow-y: scroll;
 }
 .product {
   display: grid;
-  grid-gap:2px;
+  // grid-gap: 2px;
   grid-template-columns: 250px 1fr; // picture is of 250px width
-  grid-template-rows: minmax(190px,auto);//190px; //Picture is 200px of height
+  grid-template-rows: minmax(190px, auto);
   grid-template-areas: "picture details";
   border-top: 1px outset rgb(151, 138, 138);
 }
-.picture{
+.picture {
   grid-area: picture;
-  margin:auto; // to place the image at center
+  margin: auto; // to place the image at center
 }
 
-.details{
+.details {
   grid-area: details;
-  margin:1rem;
-}
-
-.heading{
-  margin-left: 2rem;
   margin-top:1rem;
-  margin-bottom:1rem;
+  // margin: 1rem;
 }
 
-.offerPrice{
-  color:maroon;
-  font-size: 1.5rem;
+.heading {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.mrp{
+.offerPrice {
+  color: maroon;
+  font-size: 1.2rem;
+}
+
+.mrp {
   margin-left: 0.25rem;
 }
 
-.save{
+.save {
   margin-left: 0.5rem;
 }
-
-
