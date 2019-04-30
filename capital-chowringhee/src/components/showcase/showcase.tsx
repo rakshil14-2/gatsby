@@ -6,8 +6,8 @@ import showcaseJson from '../../gallaries/showcase/showcase.json';
 import styles from './showcase.module.scss';
 
 function Showcase() {
-    const {allImagesFixed} = useGallary('showcase');
-
+    const { allImagesFixed } = useGallary('showcase');
+    const x = 0;
     function toCategoriesObject(itemsMeta: any[]) {
         const categoriesObject = {};
         itemsMeta.forEach(x => {
@@ -24,7 +24,7 @@ function Showcase() {
     }
 
     function getDisplayItem(item: any, index: number) {
-        const savePercent = ' ('.concat(String(Math.round((item.mrp - item.offerPrice) / item.mrp * 100)),'%)');
+        const savePercent = ' ('.concat(String(Math.round((item.mrp - item.offerPrice) / item.mrp * 100)), '%)');
         const temp = <div key={index}>
             <div>
                 <Img fixed={allImagesFixed[item.image]}></Img>
