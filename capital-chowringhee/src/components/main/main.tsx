@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react';
 import { useGallary } from '../../hooks/gallary-hook';
-import Img from "gatsby-image"
+import Img from "gatsby-image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRupeeSign } from '@fortawesome/free-solid-svg-icons';
 import offersJson from '../../gallaries/offers/offers.json';
 import styles from './main.module.scss';
 
@@ -24,13 +26,16 @@ function Main() {
                 <div>{imageJson.specs}</div>
                 <p>
                     <span className={styles.offerPrice}>
-                        {getFormattedCurrency(imageJson.offerPrice)}
+                        <FontAwesomeIcon icon={faRupeeSign} /> {imageJson.offerPrice}
+                        {/* {getFormattedCurrency(imageJson.offerPrice)} */}
                     </span>
                     <del className={styles.mrp}>
-                        {getFormattedCurrency(imageJson.mrp)}
+                        <FontAwesomeIcon icon={faRupeeSign} /> {imageJson.mrp}
+                        {/* {getFormattedCurrency(imageJson.mrp)} */}
                     </del>
                     <span className={styles.save}>
-                        Save {getFormattedCurrency(imageJson.mrp - imageJson.offerPrice)}{savePercent}
+                        Save <FontAwesomeIcon icon={faRupeeSign} /> {imageJson.mrp - imageJson.offerPrice}{savePercent}
+                        {/* {getFormattedCurrency(imageJson.mrp - imageJson.offerPrice)}{savePercent} */}
                     </span>
                 </p>
             </div>
