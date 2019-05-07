@@ -1,11 +1,87 @@
-.contact{
-    grid-area: "main";
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 600px);
-    grid-gap: 2rem;
-    padding:2rem;
-    background-color: cornsilk;
-    justify-content: center;
-    max-height:88vh;
-    overflow-y: scroll;
+.contactContainer{
+    padding: 1rem;
+    .contactDetailsForm {
+        height: 57vh;
+        .contactDetails{
+            float:left;
+            width: 45%;
+            border: .5px solid black;
+            padding: 1rem;
+            ul {
+                font-size: 1.25rem;
+                li {
+                    margin-bottom: 1rem;
+                }
+            }
+            iframe {
+                width: 98%;
+            }
+        }
+        .contactForm{
+            width:50%;
+            border: .5px solid black;
+            float: right;
+            .contactTable {
+                width: 100%;
+                height: 22rem;
+                td {
+                  text-align: center;
+                }
+                input {
+                  height: 1.4rem;
+                  width: 14rem;
+                }
+                textarea {
+                  width: 14rem;
+                  height: 9rem;
+                }
+            }
+        }
+    }
+    .contactPersons{
+        text-align: center;
+        width: 100%;
+        padding-top: 1rem;
+        .wrapper{
+            display: inline-block;
+            .employeeContainer{
+                float:left;
+                margin: 0 5px;
+            }
+        }
+    }
 }
+
+.highlight {
+    color:red
+}
+.notes {
+    float: right;
+    font-size: .8rem;
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .contact{
+//     grid-area: "main";
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, 600px);
+//     grid-gap: 2rem;
+//     padding:2rem;
+//     background-color: cornsilk;
+//     justify-content: center;
+//     max-height:88vh;
+//     overflow-y: scroll;
+// }

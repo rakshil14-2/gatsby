@@ -86,7 +86,7 @@ function useGallary(source: string, type = 'fixed') {
           node {
             name            
             childImageSharp {
-              fixed(height:340) {
+              fixed(height:100) {
                ...GatsbyImageSharpFixed
               }
             }

@@ -3,7 +3,7 @@ import React from "react"
 
 function Footer() {
     return <footer className="footer">
-        This is footer
+        <span>&copy;</span> Kush Infotech
   </footer>
 }
 export default Footer

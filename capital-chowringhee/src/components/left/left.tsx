@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 function Left() {
     const {allImagesFluid} = useGallary('brands','fluid');
     const allImagesArray = Object.keys(allImagesFluid).map(x => allImagesFluid[x]);
-    const Temp = <div className={styles.left}>
+    const Temp = <div>
         {
             allImagesArray.map((a, index) => {
                 return <div key={index} className={styles.brands}><Img  fluid={a}></Img></div>
