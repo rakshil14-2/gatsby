@@ -32,7 +32,8 @@ function Contact() {
             subject: 'This is subject',
             text: 'This is body from Capital chowringhee'
         };
-        axios.post('http://chisel.cloudjiffy.net/email', data)
+        const emailUrl = 'http://localhost:3002/email'; //http://chisel.cloudjiffy.net/email
+        axios.post(emailUrl, data)
             .then((res) => console.log(res))
             .catch(err => console.log(err));
     }
