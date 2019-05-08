@@ -9,7 +9,7 @@ body {
         "left main"
         "footer footer";
     grid-template-columns: minmax(130px,12vw) minmax(800px, auto);
-    grid-template-rows: 6vh 90.4vh 3vh;
+    grid-template-rows: 8vh 88.4vh 3vh;
     .header {
         grid-area: header;
     }
