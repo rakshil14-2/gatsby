@@ -1,8 +1,8 @@
 [
     {
         "name":"Kamalika Roy",
-        "designation":"General Manager",
-        "mobile":"",
+        "designation":"Public Relation Officer",
+        "mobile":"9163055161",
         "email":"",
         "image":"b1",
         "order":4
@@ -18,7 +18,7 @@
     {
         "name":"Pulak Das",
         "designation":"Sales manager",
-        "mobile":"",
+        "mobile":"9831238615",
         "email":"",
         "image":"b3",
         "order":3
@@ -26,15 +26,15 @@
     {
         "name":"Kinkar Dutta",
         "designation":"Sales consultant",
-        "mobile":"",
+        "mobile":"9007321213",
         "email":"",
         "image":"b1",
         "order":2
     },
     {
-        "name":"Radha Molla",
+        "name":"Radha Joshi",
         "designation":"Casio service manager",
-        "mobile":"",
+        "mobile":"9831709175",
         "email":"",
         "image":"b5",
         "order":6
@@ -50,7 +50,7 @@
     {
         "name":"Subrata Sen",
         "designation":"Operations manager",
-        "mobile":"",
+        "mobile":"9831413723",
         "email":"",
         "image":"b7",
         "order":7
