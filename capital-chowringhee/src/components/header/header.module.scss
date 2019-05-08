@@ -10,9 +10,10 @@
     background: #343a40;
 }
 
-.brand {
+.brandName {
     align-self: center;
-    margin: 0 4rem 0 2rem;
+    margin: 0px 3rem 0 1rem;
+    font-size: 1.3em;
     a{
         color: white;
     }
@@ -30,8 +31,9 @@
         color: aquamarine;
     }
 }
-.controls {
+.brandLogo {
     align-self: center;
+    margin: 0 3rem 0 0;
 }
 
 

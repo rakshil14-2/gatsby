@@ -9,12 +9,12 @@ const Header = () => {
   const temp = imageProcessor("logo","fixed");
   return <div className={styles.container}>
     
-    <div className={styles.brand}>
-      {/* <Link to="/"> 
+    <div className={styles.brandName}>
+      <Link to="/"> 
         {metaData.title} 
         
-      </Link>  */}
-      {temp}
+      </Link> 
+      
     </div>
     
     <div className={styles.menu}>
@@ -28,8 +28,9 @@ const Header = () => {
 
     </div>
 
-    <div className={styles.controls}>
+    <div className={styles.brandLogo}>
       {/* <Link to='/'>Login</Link> */}
+      {temp}
     </div>
   </div>
   
