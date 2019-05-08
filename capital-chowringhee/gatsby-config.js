@@ -80,6 +80,13 @@ module.exports = {
         path: `${__dirname}/src/gallaries/contacts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `logo`,
+        path: `${__dirname}/src/gallaries/logo`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

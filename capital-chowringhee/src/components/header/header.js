@@ -2,12 +2,20 @@ import { Link } from "gatsby"
 import React from "react"
 import styles from './header.module.scss';
 import { useMetaData } from '../../hooks/site-metadata';
+import {imageProcessor} from "../../hooks/image-processor-hook"
 
 const Header = () => {
   const { metaData } = useMetaData();
+  const temp = imageProcessor("logo","fixed");
   return <div className={styles.container}>
     
-    <div className={styles.brand}> <Link to="/"> {metaData.title} </Link> </div>
+    <div className={styles.brand}>
+      {/* <Link to="/"> 
+        {metaData.title} 
+        
+      </Link>  */}
+      {temp}
+    </div>
     
     <div className={styles.menu}>
     
