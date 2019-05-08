@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from 'react';
 import { useGallary } from '../../hooks/gallary-hook';
-import Img from "gatsby-image"
+import Img from 'gatsby-image';
 import contactsJson from '../../gallaries/contacts/contacts.json';
 import styles from './contact.module.scss';
 import axios from 'axios';
+import settings from '../../settings.json';
 
 function Contact() {
     const [name, setName] = useState("");
@@ -20,12 +21,14 @@ function Contact() {
       setMessage("");
     }
 
-    function sendEmail() {
+    const sendEmail = (evt) => {
+        evt.preventDefault();
         const data = {
             senderMail: {email},
             subject: 'Capital Chowringhee Site - Email',
             text: 'Name: ' + name + ", Mobile: " + mobile + ", Message: " + message
         };
+
         axios.post('http://chisel.cloudjiffy.net/email', data)
             .then((res) => console.log(res))
             .catch(err => console.log(err));
@@ -50,10 +53,10 @@ function Contact() {
         <div className={styles.contactDetailsForm}>
             <div className={styles.contactDetails}>
                 <ul>
-                    <li>033-22285232</li> 
-                    <li>033-22285233</li> 
-                    <li>033-22285857</li>
-                    <li>033-22280608</li>
+                    <li>Phone - 033-22285232</li> 
+                    <li>Phone - 033-22285233</li> 
+                    <li>Phone - 033-22285857</li>
+                    <li>Phone - 033-22280608</li>
                 </ul>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.4386410807465!2d88.34903631495938!3d22.56269198518786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02770837058d17%3A0x9e274ebbc909cef6!2sCapital+Enterprise+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1557127833197!5m2!1sen!2sin"></iframe>
             </div>
@@ -105,40 +108,15 @@ function Contact() {
             </div>
         </div>
         <div className={styles.contactPersons}>
-            <div className={styles.wrapper}>
-                {
-                    contactsJson.map((contact: any, index: number) => {
-                        return getDisplayContact(contact, index);
-                })}
-            </div>
+            {
+                contactsJson.map((contact: any, index: number) => {
+                    return getDisplayContact(contact, index);
+            })}
         </div>
     </div>
 }
 
 export default Contact;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const { allImagesFixed } = useGallary('contacts');
 
@@ -170,7 +148,6 @@ export default Contact;
 //             .then((res) => console.log(res))
 //             .catch(err => console.log(err));
 //     }
-
 
 //     const Temp = <div><button onClick={(e) => sendmail()}>Email</button><div className={styles.contact}>{
 

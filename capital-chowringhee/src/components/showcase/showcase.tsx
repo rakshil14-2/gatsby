@@ -19,10 +19,6 @@ function Showcase() {
         return categoriesObject;
     }
 
-    function getFormattedCurrency(amount) {
-        return new Intl.NumberFormat('en-IN', { style: "currency", currency: 'INR', minimumFractionDigits: 0 }).format(amount);
-    }
-
     function getDisplayItem(item: any, index: number) {
         const savePercent = ' ('.concat(String(Math.round((item.mrp - item.offerPrice) / item.mrp * 100)), '%)');
         const temp = <div key={index}>
@@ -42,7 +38,8 @@ function Showcase() {
     const categoriesObjectKeys: string[] = Object.keys(categoriesObject);
     const Temp = <div >
         {categoriesObjectKeys.map((categoriesKey, index) => {
-            return <Fragment key={index}> <h1 className={styles.heading}>{categoriesKey}</h1>
+            return <Fragment key={index}> 
+                <div className={styles.heading}>{categoriesKey}</div>
                 <div className={styles.category}>
                     {
                         categoriesObject[categoriesKey].map((x: any, index: number) => {
