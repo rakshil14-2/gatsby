@@ -1,12 +1,12 @@
 .contactContainer{
-    padding: 1rem;
+    padding: .5rem 1rem 0 1rem;
     text-align: center;
     .contactDetailsForm {
         .contactDetails{
             float:left;
             width: 45%;
             border: .5px solid black;
-            padding: 1rem;
+            padding: .9rem;
             ul {
                 list-style: none;
                 font-size: 1.25rem;
@@ -40,7 +40,7 @@
         }
     }
     .contactPersons {
-        padding: 1rem .1rem 0 .1rem;
+        padding: .5rem .1rem 0 .1rem;
         display: inline-block;
         .employeeContainer{
             float:left;
