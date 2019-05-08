@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from 'react';
 import { useGallary } from '../../hooks/gallary-hook';
-import Img from "gatsby-image"
+import Img from 'gatsby-image';
 import contactsJson from '../../gallaries/contacts/contacts.json';
 import styles from './contact.module.scss';
 import axios from 'axios';
+import settings from '../../settings.json';
 
 function Contact() {
     const [name, setName] = useState("");
@@ -117,29 +118,6 @@ function Contact() {
 
 export default Contact;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const { allImagesFixed } = useGallary('contacts');
 
 //     function getDisplayContact(contact: any, index: number) {
@@ -170,7 +148,6 @@ export default Contact;
 //             .then((res) => console.log(res))
 //             .catch(err => console.log(err));
 //     }
-
 
 //     const Temp = <div><button onClick={(e) => sendmail()}>Email</button><div className={styles.contact}>{
 
