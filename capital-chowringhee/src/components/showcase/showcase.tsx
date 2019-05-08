@@ -36,7 +36,7 @@ function Showcase() {
 
     const categoriesObject: any = toCategoriesObject(showcaseJson);
     const categoriesObjectKeys: string[] = Object.keys(categoriesObject);
-    const Temp = <div >
+    const Temp = <div className={styles.showcaseContainer}>
         {categoriesObjectKeys.map((categoriesKey, index) => {
             return <Fragment key={index}> 
                 <div className={styles.heading}>{categoriesKey}</div>
