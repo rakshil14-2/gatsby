@@ -9,7 +9,7 @@ body {
         "left main"
         "footer footer";
     grid-template-columns: minmax(130px,12vw) minmax(800px, auto);
-    grid-template-rows: 8vh 88.4vh 3vh;
+    grid-template-rows: 9vh 88.4vh 2vh;
     .header {
         grid-area: header;
     }
@@ -26,8 +26,8 @@ body {
         background: #343a40;
         text-align: center;
         color: white;
-        line-height: 3vh;
-        font-size: .8em;
+        line-height: 2vh;
+        font-size: .7em;
     }
 }
 
