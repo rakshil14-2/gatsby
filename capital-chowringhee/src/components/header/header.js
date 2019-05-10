@@ -20,11 +20,11 @@ const Header = () => {
     <div className={styles.menu}>
     
         <Link to='/' className={styles.link} activeClassName={styles.active} >Home</Link>
-        <Link to='/about' className={styles.link} activeClassName={styles.active}>About</Link>
-        <Link to='/contact' className={styles.link} activeClassName={styles.active}>Contact</Link>
-        <Link to='/service' className={styles.link} activeClassName={styles.active}>Service</Link>
-        <Link to='/showcase' className={styles.link} activeClassName={styles.active}>Showcase</Link>
-        <Link to='/shop' className={styles.link} activeClassName={styles.active}>Shop</Link>
+        <Link to='/about/' className={styles.link} activeClassName={styles.active}>About</Link>
+        <Link to='/contact/' className={styles.link} activeClassName={styles.active}>Contact</Link>
+        <Link to='/service/' className={styles.link} activeClassName={styles.active}>Service</Link>
+        <Link to='/showcase/' className={styles.link} activeClassName={styles.active}>Showcase</Link>
+        <Link to='/shop/' className={styles.link} activeClassName={styles.active}>Shop</Link>
 
     </div>
 

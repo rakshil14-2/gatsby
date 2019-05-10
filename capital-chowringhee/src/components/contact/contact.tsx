@@ -75,7 +75,7 @@ function Contact() {
 									<label>Mobile <span className={styles.highlight}>*</span></label>
 								</td>
 								<td>
-									<input type="text" pattern="[0-9]*" required name="mobile" minLength="10" maxLength="10" value={mobile} onChange={e => setMobile(e.target.value)} />
+									<input type="text" pattern="[0-9]*" required name="mobile" minLength={10} maxLength={10} value={mobile} onChange={e => setMobile(e.target.value)} />
 								</td>
 							</tr>
 							<tr>
@@ -91,11 +91,11 @@ function Contact() {
 									<label>Message</label>
 								</td>
 								<td>
-									<textarea rows="6" name="message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+									<textarea rows={6} name="message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
 								</td>
 							</tr>
 							<tr>
-								<td colSpan="2">
+								<td colSpan={2}>
 									<button type="submit" className="mailButton">Contact</button>
 								</td>
 							</tr>
@@ -109,7 +109,8 @@ function Contact() {
 			{
 				contactsJson.map((contact: any, index: number) => {
 					return getDisplayContact(contact, index);
-				})}
+				})
+			}
 		</div>
 	</div>
 }
