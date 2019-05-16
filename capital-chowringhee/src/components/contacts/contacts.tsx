@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { useGallary } from '../../hooks/gallary-hook';
 import Img from 'gatsby-image';
 import contactsJson from '../../gallaries/contacts/contacts.json';
-import styles from './contact.module.scss';
+import styles from './contacts.module.scss';
 import axios from 'axios';
 import settings from '../../settings.json';
 

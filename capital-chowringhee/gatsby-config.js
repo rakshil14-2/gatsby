@@ -12,13 +12,6 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     // `gatsby-remark-images`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
