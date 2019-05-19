@@ -23,28 +23,5 @@ body {
     }
     .footer {
         grid-area: footer;
-        background: #343a40;
-        text-align: center;
-        color: white;
-        line-height: 2vh;
-        font-size: .7em;
     }
 }
-
-// .container {
-//     display: grid;
-//     grid-template-columns: minmax(0px,180px) minmax(600px, auto) ;
-//     grid-template-rows: 52px auto 32px;
-//     grid-template-areas:
-//         "header header"
-//         "left main"
-//         "footer footer";
-
-//     .footer {
-//         grid-area: footer;
-//         background-color: #5f84b1;
-//         color: white;
-//         font-size: 14px;
-//         font-family: monospace;
-//     }
-// }
