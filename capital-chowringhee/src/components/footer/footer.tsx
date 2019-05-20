@@ -4,10 +4,10 @@ import styles from './footer.module.scss';
 import fetch from 'isomorphic-unfetch';
 
 function Footer() {
-	const [ hitCount, setHitCount ] = useState(0);
+	const [hitCount, setHitCount] = useState(0);
 
 	const loadHitCount = async () => {
-    // console.log(settings.hitCountUrl);
+		// console.log(settings.hitCountUrl);
 		const res = await fetch(settings.hitCountUrl);
 		const tempHitCount = await res.json();
 		if (tempHitCount && tempHitCount.hits) {
@@ -17,7 +17,9 @@ function Footer() {
 	};
 
 	if (!settings.hitCount) {
-		loadHitCount();
+		if (typeof window !== 'undefined') {
+			loadHitCount();
+		}
 	}
 
 	return (
