@@ -52,7 +52,7 @@ function Contact() {
 		<div className={styles.contactDetailsForm}>
 			<div className={styles.contactDetails}>
 				<div className={styles.details}>
-					<div><span>Address -</span> 1st floor, 12, Jawaharlal Nehru Rd, Esplanade, Dharmatala, Taltala, Kolkata, West Bengal 700013</div>
+					<div><span>Address -</span> 12, Jawaharlal Nehru Rd, Ground floor and 1st floor, Esplanade, Dharmatala, Taltala, Kolkata, West Bengal 700013</div>
 					<div><span>Email -</span> capitalch@gmail.com</div>
 					<div><span>Phone -</span> 033-22285232, 033-22285233, 033-22285857, 033-22280608</div>
 				</div>

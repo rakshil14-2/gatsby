@@ -3,3 +3,11 @@
     padding: 1rem 3rem;
     text-align: justify;
 }
+
+.about {
+    font-size: 1.3em;
+    padding: 1rem 4rem;
+    .bold {
+        font-weight: bold;
+    }
+}
