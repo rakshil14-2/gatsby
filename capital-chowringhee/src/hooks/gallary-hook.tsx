@@ -100,7 +100,7 @@ function useGallary(source: string, type = 'fixed') {
           node {
             name
             childImageSharp {
-              fluid {
+              fluid (maxWidth: 600) {
                 ...GatsbyImageSharpFluid
               }
             }

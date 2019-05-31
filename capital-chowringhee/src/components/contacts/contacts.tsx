@@ -56,7 +56,7 @@ function Contact() {
 					<div><span>Email -</span> capitalch@gmail.com</div>
 					<div><span>Phone -</span> 033-22285232, 033-22285233, 033-22285857, 033-22280608</div>
 				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.4386410807465!2d88.34903631495938!3d22.56269198518786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02770837058d17%3A0x9e274ebbc909cef6!2sCapital+Enterprise+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1557127833197!5m2!1sen!2sin"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.4406316220625!2d88.34917891495937!3d22.562617485187904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7028ec8fd67d05df!2sCapital+Chowringhee+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1559300145905!5m2!1sen!2sin"></iframe>
 			</div>
 			<div className={styles.contactForm}>
 				<form onSubmit={sendEmail}>

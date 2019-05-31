@@ -15,15 +15,15 @@ function imageProcessor(source: string, type: string) {
     capitalBoard: 
     file(relativePath: { eq: "capitalBoard.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth:2000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     showwindow: 
-    file(relativePath: { eq: "Showwindow.JPG" }) {
+    file(relativePath: { eq: "showwindow.JPG" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth:2000) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -31,7 +31,7 @@ function imageProcessor(source: string, type: string) {
     showwindow1: 
     file(relativePath: { eq: "showwindow1.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth:2000) {
           ...GatsbyImageSharpFluid
         }
       }
