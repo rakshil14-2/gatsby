@@ -4,56 +4,56 @@
         "designation":"Public Relation Officer (Director)",
         "mobile":"9163055161",
         "email":"",
-        "image":"Kamalika-Roy",
-        "order":4
-    },
-    {
-        "name":"Samar Das",
-        "designation":"Nikon product consultant",
-        "mobile":"9903177904",
-        "email":"",
-        "image":"Samar-Das",
-        "order":1
+        "image":"Kamalika-Roy"
     },
     {
         "name":"Pulak Das",
         "designation":"Sales manager",
         "mobile":"9831238615",
         "email":"",
-        "image":"Pulak-Das",
-        "order":3
+        "image":"Pulak-Das"
+    },
+    {
+        "name":"Tapashi Chakraborty",
+        "designation":"Canon product consultant",
+        "mobile":"7980331281",
+        "email":"",
+        "image":"Tapashi-Chakraborty"
+    },
+    {
+        "name":"Samar Das",
+        "designation":"Nikon product consultant",
+        "mobile":"9903177904",
+        "email":"",
+        "image":"Samar-Das"
     },
     {
         "name":"Kinkar Dutta",
         "designation":"Sales consultant",
         "mobile":"9007321213",
         "email":"",
-        "image":"Kinkar-Dutta",
-        "order":2
+        "image":"Kinkar-Dutta"
     },
     {
         "name":"Radha Joshi",
         "designation":"Casio service manager",
         "mobile":"9831709175",
         "email":"",
-        "image":"Radha-Joshi",
-        "order":6
+        "image":"Radha-Joshi"
     },
     {
         "name":"Abhishek Agarwal",
         "designation":"Nikon service manager",
         "mobile":"9836561707",
         "email":"",
-        "image":"Abhishek-Agarwal",
-        "order":5
+        "image":"Abhishek-Agarwal"
     },
     {
         "name":"Subrata Sen",
         "designation":"Operations manager",
         "mobile":"9831413723",
         "email":"",
-        "image":"Subrata-Sen",
-        "order":7
+        "image":"Subrata-Sen"
     }
 
 ]

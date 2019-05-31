@@ -20,8 +20,8 @@ function imageProcessor(source: string, type: string) {
         }
       }
     }
-    samarNikon: 
-    file(relativePath: { eq: "samarNikon.jpg" }) {
+    showwindow: 
+    file(relativePath: { eq: "Showwindow.JPG" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
