@@ -36,6 +36,9 @@ const Header = () => {
 				<Link to="/shop/" className={styles.link} activeClassName={styles.active}>
 					Shop
 				</Link>
+				<Link to="/workshop/" className={styles.link} activeClassName={styles.active}>
+					Workshop
+				</Link>
 			</div>
 
 			<div className={styles.brandName}>

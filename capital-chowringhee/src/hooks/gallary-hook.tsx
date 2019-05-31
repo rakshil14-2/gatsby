@@ -93,6 +93,20 @@ function useGallary(source: string, type = 'fixed') {
           }
         }
       }
+
+      workshop:
+      allFile(filter:{sourceInstanceName: {eq:"workshop"}, extension:{ne:"json"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }`;
 
   const allData = useStaticQuery(gql);
