@@ -1,0 +1,227 @@
+body {
+    margin: .2rem;
+  }
+
+// =============================================
+// Home Page
+.home-page-container {
+  
+  .carousel-container { 
+    @media screen and (max-width: 490px) {
+      display: none;
+    }
+  }
+  .tech-logo-container {
+    margin: 0 1rem;
+    display: inline-block;
+    @media screen and (max-width: 490px) {
+      margin: 0 1rem;
+    }
+    .tech-logo {
+      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+      width: 23%;
+      min-width: 300px;
+      height: 14rem;
+      min-height: 200px;
+      margin: 2rem 2.5%;
+      float:left;
+      text-align: center;
+      position: relative;
+      .name {
+        font-weight: bold;
+        margin-top: 1rem;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
+// Home Page
+// ==============================================
+
+
+// ==============================================
+// Contact Page
+.contact-container {
+  margin: 0 8rem;
+  @media screen and (max-width: 490px) {
+    margin: 0 1rem;
+  }
+  .address-tile {
+    float:left;
+    width:47%;
+    min-width: 350px;
+    height: 500px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 2rem 4rem 0 0;
+    div {
+      padding: 1.5rem;
+      .highlight {
+        font-weight: bold;
+      }
+    }
+    iframe {
+      margin: 1rem;
+      min-width:330px;
+      width: 94%;
+      height: 200px;
+    }
+  }
+  .contact-tile {
+    float: left;
+    width:47%;
+    min-width:350px;
+    height: 500px;
+    padding: 1rem;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 2rem 0 2rem 0;
+    .contact-table {
+      width: 100%;
+      height: 450px;
+      td {
+        text-align: center;
+      }
+      input {
+        height: 2rem;
+        width: 62%;
+        min-width: 120px;
+      }
+      textarea {
+        width: 62%;
+        min-width: 120px;
+        height: 9rem;
+      }
+      label {
+        font-weight:bold;
+      }
+      .highlight {
+        color:red;
+      }
+    }
+    .notes{
+      float: right;
+      font-size:.8em;
+      .highlight {
+        color:red;
+      }
+    }
+  }
+}
+// Contact Page
+// ==============================================
+
+
+// ==============================================
+// Project Page
+.projectsContainer{
+  margin: 0 7rem;
+  @media screen and (max-width: 650px) {
+    margin: 0 1rem;
+  }
+
+  .projects{
+    height: 50px;
+    border: 1px solid black;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    background: #f1e5bd;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.project-site-name {
+  background: #f7d8b0;
+  margin: 1rem 0;
+  padding: .2rem 2rem;
+  .siteLink {
+    @media screen and (max-width: 2000px){
+      padding: 0px !important;
+    }
+    @media screen and (max-width: 991px) {
+      border: 0px !important;
+      width: auto !important;
+      background: none !important;
+      margin: 0px !important;
+    }
+  }
+}
+.project-description {
+  padding: .2rem 2rem;
+}
+.project-image-container {
+  padding: .2rem 2rem;
+  display: inline-block;
+}
+.project-image{
+  float:left;
+  margin: 1rem .7rem 1rem 0;
+}
+svg{
+  width: 11px !important;
+  height: 18px !important;
+  float: right;
+  margin: 10px;
+}
+.fade {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+// Project Page
+// ==============================================
+
+
+// ==============================================
+// About Page
+.about-container {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  margin: 0 13rem;
+  padding: .5rem 1rem;
+  @media screen and (max-width: 490px) {
+    margin: 0 1rem;
+  }
+  .left-inset-image {
+    min-width: 300px;
+    min-height: 306px;
+    width: 28%;
+    float:left;
+    margin: 0 2rem 1rem 0;
+  }
+  .content {
+    text-align: justify;
+    .header {
+      height: 40px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+}
+// About Page
+// ==============================================
+
+
+// Pricing Page
+// ==============================================
+.pricing-container {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  margin: 0 13rem;
+  padding: .5rem 1rem;
+  @media screen and (max-width: 490px) {
+    margin: 0 1rem;
+  }
+  .section-container {
+    .section {
+      padding: 10px;
+      p {
+        padding: 10px;
+      }
+    }
+  }
+}
+// Pricing Page
+// ==============================================

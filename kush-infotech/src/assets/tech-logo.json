@@ -1,0 +1,70 @@
+[
+    {
+        "name": "React",
+        "image": "react"
+    },
+    {
+        "name": "Gatsby",
+        "image": "gatsby"
+    },
+    {
+        "name": "Next.Js",
+        "image": "next"
+    },
+    {
+        "name": "Angular",
+        "image": "angular"
+    },
+    {
+        "name": "Dart", 
+        "image": "dart"
+    },
+    {   
+        "name": "Google Flutter", 
+        "image": "flutter"
+    },
+    {
+        "name": "ASP.Net",
+        "image": "asp"
+    },
+    {
+        "name": "ASP.Net MVC",
+        "image": "mvc"
+    },
+    {
+        "name": "My SQL",
+        "image": "my-sql"
+    },
+    {
+        "name": "SQL Server",
+        "image": "sql-server"
+    },
+    {
+        "name": "Oracle",
+        "image": "oracle"
+    },
+    {
+        "name": "PostGres",
+        "image": "postgres"
+    },
+    {
+        "name": "Firebase",
+        "image": "firebase"
+    },
+    {
+        "name": "HTML",
+        "image": "html"
+    },
+    {
+        "name": "CSS",
+        "image": "css"
+    },
+    {
+        "name": "JQuery",
+        "image": "jquery"
+    },
+    {
+        "name": "ES6",
+        "image": "es6"
+    }
+]

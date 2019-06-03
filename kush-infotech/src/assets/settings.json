@@ -1,0 +1,6 @@
+{
+    "emailHost":"http://chisel.cloudjiffy.net/email",
+    "to":"capitalch@gmail.com",
+    "subject": "Mail from Kush Infotech",
+    "hitCountUrl":"https://chisel.cloudjiffy.net/tools/analytics/hitcount/kushinfotech.com"
+}
