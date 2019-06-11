@@ -15,7 +15,7 @@ function imageProcessor(source: string, type: string) {
     sushant:
     file(relativePath: { eq: "sushant.jpg" }) {
       childImageSharp {
-        fixed(width: 300) {
+        fixed(width: 150) {
           ...GatsbyImageSharpFixed
         }
       }

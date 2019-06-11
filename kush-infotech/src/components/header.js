@@ -6,7 +6,7 @@ import {Navbar,Nav} from "react-bootstrap";
 
 
 const Header = () => {
-    const temp = imageProcessor("logo","fixed"); 
+    const logo = imageProcessor("logo","fixed"); 
     return <React.Fragment>
             <Navbar expand="lg" className={headerStyles.menu}>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -21,7 +21,7 @@ const Header = () => {
               </Navbar.Collapse>
             </Navbar>
             <div className={headerStyles.brandContainer}>
-              {temp}
+              {logo}
             </div>
           </React.Fragment>
           

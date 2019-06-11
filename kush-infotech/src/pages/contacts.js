@@ -27,7 +27,7 @@ const Contacts = () => {
 		};
 
 		axios.post(settings.emailHost, data)
-			.then((res) => resetForm())
+			.then((res) => {resetForm(); alert("Mail sent Successfully");})
 			.catch(err => console.log(err));
     }
     

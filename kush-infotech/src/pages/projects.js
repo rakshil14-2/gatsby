@@ -132,7 +132,7 @@ const Projects = () => {
                     </div>
                 
                     <div className="project-site-name">
-                        E-Shopping Demo 
+                        <a className="siteLink" target="_blank" href="http://chisel.cloudjiffy.net/apps/eshop">E-Shopping Demo</a>
                     </div>
                     <div className="project-description">
                         Angular 6 +
@@ -142,7 +142,7 @@ const Projects = () => {
                     </div>
 
                     <div className="project-site-name">
-                        Ornet 
+                    <a className="siteLink" target="_blank" href="https://chisel.cloudjiffy.net/apps/rx">Ornet</a>
                     </div>
                     <div className="project-description">
                         React dynamic library using Json
