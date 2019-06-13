@@ -107,6 +107,21 @@ function useGallary(source: string, type = 'fixed') {
           }
         }
       }
+
+      spareParts: 
+      allFile(filter:{sourceInstanceName: {eq:"spareParts"}, extension:{ne:"json"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fixed (width: 270) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
+
     }`;
 
   const allData = useStaticQuery(gql);

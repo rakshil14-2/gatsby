@@ -34,10 +34,13 @@ const Header = () => {
 					Showcase
 				</Link>
 				<Link to="/shop/" className={styles.link} activeClassName={styles.active}>
-					Shop
+					Gallery
 				</Link>
 				<Link to="/workshop/" className={styles.link} activeClassName={styles.active}>
-					Workshop
+					Camera-Workshop
+				</Link>
+				<Link to="/casioService/" className={styles.link} activeClassName={styles.active}>
+					Casio-Service
 				</Link>
 			</div>
 

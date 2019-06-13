@@ -88,6 +88,13 @@ module.exports = {
         path: `${__dirname}/src/gallaries/workshop`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `spareParts`,
+        path: `${__dirname}/src/gallaries/spare-parts`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
