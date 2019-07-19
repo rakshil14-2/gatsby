@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 function AboutPage() {
   const capitalBoard = imageProcessor("capitalBoard","fluid");
-  const showWindow = imageProcessor("showwindow","fluid");
+  const showwindow = imageProcessor("showwindow","fluid");
   const showwindow1 = imageProcessor("showwindow1","fluid");
 
   return <Layout>
@@ -32,7 +32,7 @@ function AboutPage() {
     and lenses and accessories of almost all reputed brands.
     </p>
 
-    {showWindow}
+    {showwindow}
 
     <p>
     <span className="bold">Photography:</span> Capital Chowringhee has several eminent and famous photographers as its customers. 
