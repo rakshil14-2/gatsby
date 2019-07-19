@@ -10,7 +10,7 @@ let inputFile, outputFile;
 files.forEach(x => {
     inputFile = path.join(__dirname, 'input', x);
     outputFile = path.join(__dirname, 'output', x)
-    sharp(inputFile).resize({ height: 400 }).toFile(outputFile)
+    sharp(inputFile).resize({ height: 15 }).toFile(outputFile)
         .then(function (newFileInfo) {
             // newFileInfo holds the output file properties
             console.log(newFileInfo);

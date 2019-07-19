@@ -54,14 +54,5 @@ const Header = () => {
 export default Header;
 
 /*
-  <header className={styles.header}>
-      <h2 className={styles.headerLeft}>
-      <Link
-        to="/">
-        {metaData.title}
-      </Link>
-    </h2>
-    <HeaderMain></HeaderMain>
-    <HeaderRight></HeaderRight>
-  </header>
+  
 */
