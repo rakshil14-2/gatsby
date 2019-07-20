@@ -1,16 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: ``,
-    description: `Retailers of electronic goods. We deal in SLR and mirrorless cameras, cellular/mobile phones, power bank, Led TV, laptops, audio products, laptops, domestic items`,
+    description: `Electronic goods retailers. We deal in SLR and mirrorless cameras, cellular/mobile phones, power bank, Led TV, laptops, audio products, laptops`,
     author: `Kush Infotech`,
-    siteUrl:'https://kushinfotech.com/'
+    siteUrl: 'https://capital-chowringhee.com/'
   },
 
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`
     `gatsby-plugin-react-helmet`,
+    `gatsby-redirect-from`,
+    `gatsby-plugin-meta-redirect`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,7 +29,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
-              linkImagesToOriginal:false
+              linkImagesToOriginal: false
             }
           }
         ]

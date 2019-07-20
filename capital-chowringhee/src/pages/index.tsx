@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 function IndexPage() {
 
   return <Layout>
-    <SEO title={diction.home} keywords={[`LED TV`, `Refrgerators`, `Digital Cameras`, 'Mobile phones']} />
+    <SEO title={diction.home} keywords={diction.keywords} />
     <Main></Main>
   </Layout>
 }
