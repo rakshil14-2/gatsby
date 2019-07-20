@@ -2,14 +2,15 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import {imageProcessor} from "../hooks/image-processor-hook"
 import SEO from "../components/seo"
+import diction from '../diction.json'
 
 function AboutPage() {
   const capitalBoard = imageProcessor("capitalBoard","fluid");
-  const showWindow = imageProcessor("showwindow","fluid");
+  const showwindow = imageProcessor("showwindow","fluid");
   const showwindow1 = imageProcessor("showwindow1","fluid");
 
   return <Layout>
-    <SEO title="Capital Chowringhee Pvt Ltd" keywords={[`retailers`, `electronic products`, `retail shop in Kolkata`]} />
+    <SEO title={diction.about} keywords={diction.keywords} />
 
     <div className="about">
     <p>
@@ -32,7 +33,7 @@ function AboutPage() {
     and lenses and accessories of almost all reputed brands.
     </p>
 
-    {showWindow}
+    {showwindow}
 
     <p>
     <span className="bold">Photography:</span> Capital Chowringhee has several eminent and famous photographers as its customers. 

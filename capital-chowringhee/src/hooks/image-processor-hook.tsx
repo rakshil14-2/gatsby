@@ -21,7 +21,7 @@ function imageProcessor(source: string, type: string) {
       }
     }
     showwindow: 
-    file(relativePath: { eq: "showwindow.JPG" }) {
+    file(relativePath: { eq: "showwindow.jpg" }) {
       childImageSharp {
         fluid(maxWidth:2000) {
           ...GatsbyImageSharpFluid
@@ -43,6 +43,7 @@ function imageProcessor(source: string, type: string) {
   return type == "fluid" ? 
     <Img key={source} fluid={data[source].childImageSharp.fluid}></Img> : 
     <Img key={source} fixed={data[source].childImageSharp.fixed}></Img> 
+  // return <Img key={source} fluid={data[source].childImageSharp.fluid}></Img>
 }
 
 export {imageProcessor};

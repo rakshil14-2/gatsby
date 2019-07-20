@@ -1,16 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Capital Chowringhee`,
-    description: `Retail shop for sales and service of electronic items. We specialize in digital cameras, SLR and mtrrorless cameras, camera lens and assessories, cellular / mobile phones, mobile phone accessory, power bank, charger, watch, headphone, microphone, earphone, laptop and desktop computer and assessory, domestic items and many more`,
+    title: ``,
+    description: `Electronic goods retailers. We deal in SLR and mirrorless cameras, cellular/mobile phones, power bank, Led TV, laptops, audio products, laptops`,
     author: `Kush Infotech`,
-    siteUrl:'https://quirky-bell-4d85c0.netlify.com/'
+    siteUrl: 'https://capital-chowringhee.com/'
   },
 
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`
     `gatsby-plugin-react-helmet`,
+    `gatsby-redirect-from`,
+    `gatsby-plugin-meta-redirect`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,7 +29,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
-              linkImagesToOriginal:false
+              linkImagesToOriginal: false
             }
           }
         ]
