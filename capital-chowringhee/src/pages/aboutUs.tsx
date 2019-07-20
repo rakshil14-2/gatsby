@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import {imageProcessor} from "../hooks/image-processor-hook"
 import SEO from "../components/seo"
+import diction from '../diction.json'
 
 function AboutPage() {
   const capitalBoard = imageProcessor("capitalBoard","fluid");
@@ -9,7 +10,7 @@ function AboutPage() {
   const showwindow1 = imageProcessor("showwindow1","fluid");
 
   return <Layout>
-    <SEO title="Capital Chowringhee Pvt Ltd" keywords={[`retailers`, `electronic products`, `retail shop in Kolkata`]} />
+    <SEO title={diction.about} keywords={diction.keywords} />
 
     <div className="about">
     <p>

@@ -34,7 +34,7 @@ const Header = () => {
 					Showcase
 				</Link>
 				<Link to="/shop/" className={styles.link} activeClassName={styles.active}>
-					Gallery
+					Shop
 				</Link>
 				<Link to="/workshop/" className={styles.link} activeClassName={styles.active}>
 					Camera-Workshop

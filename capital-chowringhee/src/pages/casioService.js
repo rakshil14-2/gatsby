@@ -6,6 +6,7 @@ import settings from '../settings.json';
 import Img from "gatsby-image";
 import { useGallary } from '../hooks/gallary-hook';
 import sparePartsJson from '../gallaries/spare-parts/spare-parts.json';
+import diction from '../diction.json'
 
 function casioService() {
   const [name, setName] = useState("");
@@ -47,11 +48,12 @@ function casioService() {
   }
   
   return <Layout>
-    <SEO title="Capital Chowringhee Pvt Ltd" keywords={[`retailers`, `electronic products`, `retail shop in Kolkata`]} />
+    <SEO title={diction.casio} keywords={diction.keywords} />
         <div className="casio-service-container">
             <div className="header">Capital Electronics: Casio Authorized Service Center</div>
-            We offer repair and service for Casio products such as Calculators, Music instruments and Watches. We also 
-            directly sell original spare parts for Casio musical instruments at best prices. For more information please 
+            We repair and service Casio products such as Calculators, Music instruments and Watches, projectors in-warranty and out of warranty.
+            <div> <b>We sell original Casio spare parts for Casio musical instruments and watches at best prices.</b> </div>
+            For more information please 
             email us at <strong>capitalch@gmail.com</strong>
             <div className="contact-image-container">
               <div className="image-container">
