@@ -8,11 +8,25 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import logo from "../gallaries/logo/logo.png"
+import settings from '../settings.json'
 
-function SEO({ description, lang, meta, keywords, title }) {
-  const { site } = useStaticQuery(
-    graphql`
+import {
+  useStaticQuery,
+  graphql
+} from "gatsby"
+
+function SEO({
+  description,
+  lang,
+  meta,
+  keywords,
+  title
+}) {
+  const {
+    site
+  } = useStaticQuery(
+    graphql `
       query {
         site {
           siteMetadata {
@@ -27,21 +41,34 @@ function SEO({ description, lang, meta, keywords, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  return (
-    <Helmet
-      htmlAttributes={{
+  return ( <
+    Helmet htmlAttributes = {
+      {
         lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
+      }
+    }
+    title = {
+      title
+    }
+    titleTemplate = {
+      `%s | ${site.siteMetadata.title}`
+    }
+    meta = {
+      [{
           name: `description`,
           content: metaDescription,
         },
         {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:url`,
+          content: settings.url
+        },
+        {
+          property: `og:image`,
+          content: logo
         },
         {
           property: `og:description`,
@@ -68,15 +95,16 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
       ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
+      .concat(
+        keywords.length > 0 ?
+        {
+          name: `keywords`,
+          content: keywords.join(`, `),
+        } :
+        []
+      )
+      .concat(meta)
+    }
     />
   )
 }

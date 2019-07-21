@@ -18,28 +18,28 @@ const Header = () => {
 			</div>
 
 			<div className={styles.menu}>
-				<Link to="/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/" >
 					Home
 				</Link>
-				<Link to="/aboutUs/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/aboutUs/" >
 					About
 				</Link>
-				<Link to="/contacts/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/contacts/" >
 					Contacts
 				</Link>
-				<Link to="/service/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/service/" >
 					Service
 				</Link>
-				<Link to="/showcase/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/showcase/" >
 					Showcase
 				</Link>
-				<Link to="/shop/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/shop/" >
 					Shop
 				</Link>
-				<Link to="/workshop/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/workshop/" >
 					Camera-Workshop
 				</Link>
-				<Link to="/casioService/" className={styles.link} activeClassName={styles.active}>
+				<Link to="/casioService/" >
 					Casio-Service
 				</Link>
 			</div>
