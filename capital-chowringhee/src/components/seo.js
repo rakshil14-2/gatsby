@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import logo from "../gallaries/logo/logo.png"
 import settings from '../settings.json'
 
 import {
@@ -42,7 +41,7 @@ function SEO({
   const metaDescription = description || site.siteMetadata.description
 
   return ( <
-    Helmet htmlAttributes = {
+    Helmet htmlAttributes = { 
       {
         lang,
       }
@@ -68,7 +67,7 @@ function SEO({
         },
         {
           property: `og:image`,
-          content: logo
+          content: 'https://www.capital-chowringhee.com/logo.png'
         },
         {
           property: `og:description`,

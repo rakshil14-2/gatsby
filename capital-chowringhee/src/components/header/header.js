@@ -5,14 +5,11 @@ import styles from './header.module.scss';
 import { imageProcessor } from '../../hooks/image-processor-hook';
 
 const Header = () => {
-	// const { metaData } = useMetaData();
   const temp = imageProcessor('logo', 'fixed');
-  // console.log('header traversed');
 	return (
 		<div className={styles.container}>
 			<div className={styles.brandLogo}>
 				<Link to="/">
-					{/* {metaData.title}  */}
 					{temp}
 				</Link>
 			</div>
@@ -45,7 +42,6 @@ const Header = () => {
 			</div>
 
 			<div className={styles.brandName}>
-				{/* <Link to='/'>Login</Link> */}
 				Capital Chowringhee Pvt. Ltd.
 			</div>
 		</div>

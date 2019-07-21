@@ -24,9 +24,8 @@
     a {
         color: white;
         margin: 0 20px 0 0;
-        height: 45px;
     }
-    a[aria-current="page"]{
+    a[aria-current="page"] {
         color: aquamarine;
     }
 }
@@ -34,68 +33,3 @@
     align-self: center;
     padding: 0 5rem 0 1rem;
 }
-
-
-
-
-// .header {
-//     grid-area: header;
-//     background-color: #5f84b1;
-//     display: grid;
-//     grid-template-columns: minmax(0,250px) minmax(600px, auto) minmax(0px, 220px);
-//     grid-template-areas: "header-left header-main header-right";
-//     font-family: monospace;
-    
-// }
-
-// .headerLeft {
-//     grid-area: header-left;
-//     margin-left: 5px;
-//     a {
-//         color: white;
-//         text-decoration: none;
-//     }
-//     // display:flex;
-//     // flex-direction: row;
-//     // align-items: center;
-//     overflow: hidden;
-//     // margin-top:auto;
-//     // margin-bottom: auto;
-// }
-
-// .headerMain {
-//     grid-area: header-main;
-//     font-size: 1.2rem;
-//     color: white;
-//     a {
-//         margin-right: 30px;
-//         text-decoration: none;
-//     }
-
-//     a:hover {
-//         color: red;
-//     }
-//     margin-top:auto;
-//     margin-bottom: auto;
-//     overflow: hidden;
-//     margin-left: 2px;
-// }
-
-// .link{
-//     color:white;
-// }
-
-// .active {
-//     color: red;
-// }
-
-// .headerRight {
-//     grid-area: header-right;
-//     font-size: 1.2rem;
-//     margin-top:auto;
-//     margin-bottom: auto;
-//     overflow: hidden;
-//     a {
-//         color: white;
-//     }
-// }
