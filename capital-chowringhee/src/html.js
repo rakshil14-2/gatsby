@@ -40,8 +40,8 @@ export default function HTML(props) {
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
-        <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }}/>
-        <div key='bodySocialMedia' id='socialMedia' dangerouslySetInnerHTML={{ __html: socialMediaPages }}></div>
+        <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body + socialMediaPages }}/>
+        {/* <dangerouslySetInnerHTML={{ __html: socialMediaPages }}>  <> */}
         {props.postBodyComponents}
       </body>
     </html>

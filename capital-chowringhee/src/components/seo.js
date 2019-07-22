@@ -40,6 +40,12 @@ function SEO({
 
   const metaDescription = description || site.siteMetadata.description
 
+    // <Helmet>
+    //   <title>{title}</title>
+    //   <meta></meta>
+    //   <meta></meta>
+    // </Helmet>
+
   return ( <
     Helmet htmlAttributes = { 
       {
@@ -104,6 +110,7 @@ function SEO({
       )
       .concat(meta)
     }
+    
     />
   )
 }
