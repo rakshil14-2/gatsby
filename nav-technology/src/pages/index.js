@@ -3,14 +3,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { useCarousel } from "../hooks/carousel-hook";
 import { useGallery } from "../hooks/gallery-hook";
-import seoJson from "../assets/seo.json";
 
 function IndexPage() {
   const Carousel = useCarousel();
   const CategoryGallery = useGallery("category");
 
   return <Layout>
-    <SEO title="Nav Technology Home" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+    <SEO />
+    <h1>Best Sony Authorized Service Center in Kolkata</h1>
     <div className="home-page-container">
       <div className="carousel-container">
         {Carousel}

@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import axios from 'axios';
 import settings from '../assets/settings.json';
 import SEO from "../components/seo";
-import seoJson from "../assets/seo.json";
 import { useGallery } from "../hooks/gallery-hook";
 
 const Contacts = () => { 
@@ -35,7 +34,8 @@ const Contacts = () => {
     
 
     return <Layout>
-		<SEO title="Nav Technology Contact" description={seoJson["decription"]} keywords={seoJson["keywords"]}/>
+		<SEO/>
+		<h1>Sony Authorized Service Center in Kankurgachi, Kolkata</h1>
         <div className="contact-container">
 			<div className="contact-tile">
                 <form onSubmit={sendEmail}>

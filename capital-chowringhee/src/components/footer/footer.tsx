@@ -4,7 +4,7 @@ import styles from './footer.module.scss';
 import fetch from 'isomorphic-unfetch';
 
 function Footer() {
-	const [hitCount, setHitCount] = useState(0);
+	const [, setHitCount] = useState(0);
 
 	const loadHitCount = async () => {
 		// console.log(settings.hitCountUrl);

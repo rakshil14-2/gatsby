@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import SchemaOrg from './schema-org'
 
-function SEO({ description, lang, meta, title }) {
+function SEO() {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -31,12 +31,14 @@ function SEO({ description, lang, meta, title }) {
       }
     `
   )
+  
   // const metaDescription = description || site.siteMetadata.description
-const {title, description, url, image, author, organization, social } = site.siteMetadata;
-  return (
+const {title, description, url, image, author, organization, social } = site.siteMetadata;  
+return (
     <>
       <Helmet>
         {/* General tags */}
+        <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="image" content={image} />
@@ -48,11 +50,12 @@ const {title, description, url, image, author, organization, social } = site.sit
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-        <meta property="fb:app_id" content={seo.social.fbAppID} />
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content={social.fbAppID} />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content={seo.social.twitter} />
+        <meta name="twitter:creator" content={social.twitter} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
@@ -64,7 +67,6 @@ const {title, description, url, image, author, organization, social } = site.sit
               image={image}
               description={description}
               // datePublished={datePublished}
-              siteUrl={url}
               author={author}
               organization={organization}
               defaultTitle={title} />
@@ -73,7 +75,7 @@ const {title, description, url, image, author, organization, social } = site.sit
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: 'en',
   meta: [],
   description: ``,
 }

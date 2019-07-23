@@ -2,23 +2,32 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 export default React.memo(
-    ({ author, siteUrl,
-        datePublished,
+    ({ author, url,
         defaultTitle,
         description,
         image,
         isBlogPost,
         organization,
-        title,
-        url,
+        title
     }: any) => {
         const baseSchema = [
             {
                 '@context': 'http://schema.org',
-                '@type': 'WebSite',
-                url,
+                '@type': 'Organization',
+                url: url,
                 name: title,
                 alternateName: defaultTitle,
+                sameAs : [
+                    "https://twitter.com/nav_technology",
+                    "https://www.facebook.com/Nav-Technology-Pvt-Ltd-2856558957704521"
+                   ],
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "130A Bagmari Road, Scheme VII M, Kankurgachi, Kolkata",
+                    "addressRegion": "Kolkata",
+                    "postalCode": "700054",
+                    "addressCountry": "India"
+                  }
             },
         ];
 
@@ -64,9 +73,8 @@ export default React.memo(
                     },
                     mainEntityOfPage: {
                         '@type': 'WebSite',
-                        '@id': siteUrl,
-                    },
-                    datePublished,
+                        '@id': url,
+                    }
                 },
             ]
             : baseSchema;

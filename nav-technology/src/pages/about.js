@@ -1,12 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const About = () => {
   return <Layout>
+  <SEO />
     <div className="about-container">
+    <h1>Nav Technology Pvt Ltd is authorized Service Center of Sony for over two decades</h1>
       <p>
-        Nav Technology Pvt Ltd is authorized Service Center of Sony for over two decades, in the city of
-        Kolkata. Sony needs no introduction and this brand is quite popular in India for its quality
+        Sony needs no introduction and this brand is quite popular in India for its quality
         consumer electronics products like LCD and LED TV’s, Music systems and home theaters, Digital
         and SLR cameras, audio accessories and other products. We are proud to be associated with
         Sony.
