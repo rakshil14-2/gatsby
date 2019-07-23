@@ -1,15 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `Nav Technology`,
-    description: `Nav Technology is a Sony authorized service center in Kolkata that provides state of art services at reasonable price`,
+    description: `Nav Technology is a Sony authorized service center in Kolkata that provides state of art Sony services at reasonable price`,
     author: `Kush Infotech`,
-    siteUrl:'https://wizardly-kare-a1080a.netlify.com'
+    siteUrl:'https://navtechnology.in'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
