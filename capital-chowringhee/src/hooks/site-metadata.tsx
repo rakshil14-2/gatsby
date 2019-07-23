@@ -7,7 +7,9 @@ function useMetaData(props: any) {
           siteMetadata {
             title
             description
-            author
+            author {
+              name
+            }
           }
         }
     }`

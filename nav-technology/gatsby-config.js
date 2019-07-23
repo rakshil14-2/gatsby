@@ -1,12 +1,4 @@
 module.exports = {
-  // siteMetadata: {
-  //   title: `Nav Technology`,
-  //   description: `Nav Technology is a Sony authorized service center in Kolkata that provides state of art Sony services at reasonable price`,
-  //   author: `Kush Infotech`,
-  //   siteUrl:'https://navtechnology.in',
-  //   url: 'https://navtechnology.in',
-  //   image:''
-  // },
   siteMetadata: {
     title: `Nav Technology Pvt Ltd, Sony Service Center`,
     description: `

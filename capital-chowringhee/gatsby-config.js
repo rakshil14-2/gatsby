@@ -1,11 +1,38 @@
 module.exports = {
+  // siteMetadata: {
+  //   title: ``,
+  //   description: `Electronic goods retailers. We deal in SLR and mirrorless cameras, cellular/mobile phones, power bank, Led TV, laptops, audio products, laptops, domestic items`,
+  //   author: `Kush Infotech`,
+  //   siteUrl: 'https://capital-chowringhee.com/'
+  // },
   siteMetadata: {
-    title: ``,
-    description: `Electronic goods retailers. We deal in SLR and mirrorless cameras, cellular/mobile phones, power bank, Led TV, laptops, audio products, laptops, domestic items`,
-    author: `Kush Infotech`,
-    siteUrl: 'https://capital-chowringhee.com/'
+    title: `Capital Chowringhee Pvt Ltd, leading retailers of electronic goods`,
+    description: `
+    We deal with SLR and mirrorless cameras, cellular/mobile phones, power bank, Led TV, laptops, audio products, laptops, domestic items.
+    `,
+    url: 'https://www.capital-chowringhee.com',
+    siteUrl: 'https://www.capital-chowringhee.com',
+    image: 'https://www.navtechnology.in/capital-board.jpg',
+    author: {
+      name: 'Sushant Agrawal',
+      minibio: 'Sushant is software consultant in state of the art software technologies like React.js, Angular.js, Node.js, PostgreSql and many more.'
+    },
+    organization: {
+      name: 'Capital Chowringhee Pvt Ltd',
+      url: 'https://www.capital-chowringhee.com',
+      logo: 'https://www.capital-chowringhee.com/logo.png'
+    },
+    social: {
+      twitter: '@PvtCapital',
+      fbAppID: 'https://www.facebook.com/CapitalChowringheePvtLtd'
+    },
+    categories: [
+      {
+        slug: 'Retailers',
+        name: 'Retailers of electronic goods',
+      }
+    ]
   },
-
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
