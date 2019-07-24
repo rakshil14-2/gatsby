@@ -12,7 +12,7 @@ module.exports = {
     `,
     url: 'https://www.capital-chowringhee.com',
     siteUrl: 'https://www.capital-chowringhee.com',
-    image: 'https://www.navtechnology.in/capital-board.jpg',
+    image: 'https://www.capital-chowringhee.com/capital-board.jpg',
     author: {
       name: 'Sushant Agrawal',
       minibio: 'Sushant is software consultant in state of the art software technologies like React.js, Angular.js, Node.js, PostgreSql and many more.'
