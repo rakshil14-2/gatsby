@@ -8,7 +8,7 @@ export default function HTML(props) {
   {
     "@context" : "http://schema.org",
     "@type" : "Organization",
-    "name" : "capital-scowringhee",
+    "name" : "capital-cowringhee",
     "url" : "https://www.capital-chowringhee.com",
     "sameAs" : [
       "https://www.facebook.com/CapitalChowringheePvtLtd/",
